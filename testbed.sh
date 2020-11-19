@@ -19,7 +19,7 @@ measure()
 
 for iteration in {1..15} ; 
 do 
-for benchmark in `cat benchmarks.txt`; 
+for benchmark in `grep -v  "#" benchmarks/benchmarks.sh`; 
 do
      
         for jvm in ${jvms[@]} ; 
