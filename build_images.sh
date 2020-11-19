@@ -18,7 +18,7 @@ FILE=benchmarks/jars
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
 else 
-    mkdir benchmarks/jars
+    mkdir -p benchmarks/jars
     cd benchmarks/jars
     wget https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/dacapo.jar
     wget https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/renaissance-gpl-0.11.0.jar
