@@ -1,7 +1,7 @@
 #! /bin/bash 
 
 IFS=$'\n'
-reportfile="report4.logs"
+reportfile=`cat /etc/mailname`.logs
 
 jvms=(
 

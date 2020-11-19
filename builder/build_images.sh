@@ -85,7 +85,6 @@ for jvm in ${jvms[@]}; do
     echo building jvm $jvm
     docker build --tag $user/jvm:$jvm --build-arg TAG="$jvm"  .
     # docker push $user/jvm:$jvm
-    exit
 done
 
 
