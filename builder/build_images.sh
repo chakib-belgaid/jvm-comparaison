@@ -1,6 +1,14 @@
 #! /bin/bash
 
 jvms=(
+    15.0.1-open
+    14.0.2-open
+    13.0.2-open
+    12.0.2-open
+    11.0.2-open
+    10.0.2-open
+    9.0.4-open
+    8.0.265-open
     15.0.1.j9-adpt
     15.0.1.hs-adpt
     14.0.2.j9-adpt
@@ -61,14 +69,6 @@ jvms=(
     16.ea.24-open
     #16.ea.7.lm-open
     #16.ea.2.pma-open
-    15.0.1-open
-    14.0.2-open
-    13.0.2-open
-    12.0.2-open
-    11.0.2-open
-    10.0.2-open
-    9.0.4-open
-    8.0.265-open
     20.2.0.0-mandrel
     15.0.1-sapmchn
     14.0.2-sapmchn
@@ -85,9 +85,12 @@ for jvm in ${jvms[@]}; do
     echo building jvm $jvm
     docker build --tag $user/jvm:$jvm --build-arg TAG="$jvm"  .
     # docker push $user/jvm:$jvm
+    exit
 done
 
 
-cd ../benchmarks/jars/
+cd ../benchmarks/
+mkdir jars
+cd jars
 wget https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/dacapo.jar
 wget https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/renaissance-gpl-0.11.0.jar

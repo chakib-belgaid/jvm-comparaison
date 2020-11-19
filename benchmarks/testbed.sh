@@ -1,9 +1,10 @@
 #! /bin/bash 
 
 IFS=$'\n'
-reportfile="report3.logs"
+reportfile="report4.logs"
 
 jvms=(
+
     15.0.1.j9-adpt
     15.0.1.hs-adpt
     14.0.2.j9-adpt
@@ -107,6 +108,7 @@ do
             measure $name docker run --rm -it --entrypoint=/root/.sdkman/candidates/java/current/bin/java  -v`pwd`/jars:/jars \
             chakibmed/jvm:$jvm  -jar /jars/${benchmark[@]}
             IFS=$'\n'
+
         done
     done
 done 
