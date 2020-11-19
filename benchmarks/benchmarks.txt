@@ -1,0 +1,4 @@
+dacapo.jar pmd -s large
+renaissance-gpl-0.11.0.jar dotty
+renaissance-gpl-0.11.0.jar als
+dacapo.jar avrora -s large
