@@ -3,7 +3,7 @@
 IFS=$'\n'
 mkdir benchmarks/results/ 2>/dev/NULL
 reportfile=`cat /etc/mailname`
-reportfile=benchmarks/results/${reportfile%%.*}.logs
+reportfile=benchmarks/results/report$1-${reportfile%%.*}.logs
 
 
 jvms=`grep -v  "#" jvms.sh `
