@@ -14,6 +14,6 @@ done
 
 
 
-mkdir -p benchmarks/jars &&   cd benchmarks/jars && \
+mkdir  benchmarks/jars &&   cd benchmarks/jars && \
     wget   https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/dacapo.jar  &&\
     wget https://gitlab.inria.fr/mbelgaid/docker-jvm-builder/-/raw/master/renaissance-gpl-0.11.0.jar
