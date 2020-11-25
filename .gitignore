@@ -2,3 +2,5 @@ benchmarks/jars/*
 
 benchmarks/results/*
 
+lab/*
+records/*

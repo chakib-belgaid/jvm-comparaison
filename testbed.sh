@@ -17,10 +17,12 @@ measure()
     perf stat -a -r 1  -e power/energy-pkg/ -e power/energy-cores/ -e power/energy-ram/ -e power:cpu_idle -o $reportfile --append   $@
 }
 
-for iteration in {1..15} ; 
-do 
+
 for benchmark in `grep -v  "#" benchmarks/benchmarks.sh`; 
 do
+for iteration in {1..15} ; 
+do 
+
      
         for jvm in ${jvms[@]} ; 
         do     
