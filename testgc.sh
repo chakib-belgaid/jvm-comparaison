@@ -64,8 +64,8 @@ for iteration in {1..15}; do
             chakibmed/jvm:20.2.0.r11-grl -Xmx2G -Xms2G -XX:+UseParallelOldGC -jar -jar /jars/${benchmark[@]}
         sleep 3
 
-        # measure GraalGC_Pause_$name docker run --rm -it --entrypoint=/root/.sdkman/candidates/java/current/bin/java  -v`pwd`/benchmarks/jars:/jars \
-        chakibmed/jvm:20.2.0.r11-grl -Xmx2G -Xms2G -XX:MaxGCPauseMillis=5000 -XX:GCTimeRatio=2 -jar -jar /jars/${benchmark[@]}
+        measure GraalGC_Pause_$name docker run --rm -it --entrypoint=/root/.sdkman/candidates/java/current/bin/java -v$(pwd)/benchmarks/jars:/jars \
+            chakibmed/jvm:20.2.0.r11-grl -Xmx2G -Xms2G -XX:MaxGCPauseMillis=5000 -XX:GCTimeRatio=2 -jar -jar /jars/${benchmark[@]}
         sleep 3
 
         ############ j9 adopt #######
