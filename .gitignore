@@ -4,5 +4,7 @@ benchmarks/results/*
 powers/*
 nohup.out
 
+build_images.sh
+
 lab/*
 records/*
