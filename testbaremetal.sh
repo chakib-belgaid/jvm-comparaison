@@ -3,7 +3,8 @@
 IFS=$'\n'
 # mkdir benchmarks/results/ 2>/dev/NULL
 reportfile=$(cat /etc/mailname)
-reportfile=/home/mbelgaid/jvm-comparaison/benchmarks/results/report$1-${reportfile%%.*}.logs
+reportfile=/home/mbelgaid/jvm-comparaison/benchmarks/results/reportbare$1-${reportfile%%.*}.logs
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 jvms=$(grep -v "#" jvms.sh)
 
@@ -22,9 +23,8 @@ for iteration in {1..30}; do
             benchname=$(echo $benchmark | cut -d " " -f2)
             name=$jvm"_"$benchname"_"$iteration
             echo $name
-
-            measure $name docker run --rm -it --entrypoint=/root/.sdkman/candidates/java/current/bin/java -v$(pwd)/benchmarks/jars:/jars \
-                chakibmed/jvm:$jvm -jar /jars/${benchmark[@]}
+            sdk use java $jvm
+            measure $name java -jar /home/mbelgaid/jvm-comparaison/benchmarks/jars/${benchmark[@]}
             IFS=$'\n'
 
         done

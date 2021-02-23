@@ -3,10 +3,12 @@ IFS=$'\n'
 jvms=$(grep -v "#" jvms.sh)
 
 user=chakibmed
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 for jvm in ${jvms[@]}; do
     echo building jvm $jvm
-    docker build --tag $user/jvm:$jvm --build-arg TAG="$jvm" -f jvms-builder/Dockerfile jvms-builder
+    sdk install java $jvm
     # docker push $user/jvm:$jvm
 done
 

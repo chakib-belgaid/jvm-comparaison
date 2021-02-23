@@ -1,6 +1,6 @@
 #! /bin/bash
 
-name="testt"
+suffix=$1
 
 IFS=$'\n'
 
@@ -27,7 +27,7 @@ for benchmark in $(grep -v "#" benchmarks/benchmarks.sh); do
 
         benchname=$(echo $benchmark | cut -d " " -f2)
 
-        name=$benchname"_"$jvm
+        name=$benchname"_"$jvm"_"$suffix
         echo $name
 
         measure $name $jvm $benchmark

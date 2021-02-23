@@ -1,6 +1,8 @@
 benchmarks/jars/*
 
 benchmarks/results/*
+powers/*
+nohup.out
 
 lab/*
 records/*

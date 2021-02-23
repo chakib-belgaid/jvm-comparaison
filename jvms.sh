@@ -1,4 +1,4 @@
-15.0.1.j9-adpt
+# 15.0.1.j9-adpt
 # 15.0.1.hs-adpt
 # 14.0.2.j9-adpt
 # 14.0.2.hs-adpt
@@ -45,7 +45,7 @@
 # #8.0.275.fx-librca
 # 8.0.275-librca
 # #8.0.265.fx-librca
-20.2.0.r11-grl
+# 20.2.0.r11-grl
 # 20.2.0.r8-grl
 # 20.1.0.r11-grl
 # #20.1.0.r8-grl
@@ -55,7 +55,7 @@
 # 19.3.4.r8-grl
 # #19.3.1.r11-grl
 # #19.3.1.r8-grl
-# 16.ea.24-open
+# # 16.ea.24-open
 # #16.ea.7.lm-open
 # #16.ea.2.pma-open
 15.0.1-open
@@ -63,7 +63,7 @@
 # 13.0.2-open
 # 12.0.2-open
 # 11.0.2-open
-# 10.0.2-open
+# # 10.0.2-open
 # 9.0.4-open
 # 8.0.265-open
 # 20.2.0.0-mandrel
