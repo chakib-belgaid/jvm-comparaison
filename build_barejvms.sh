@@ -12,6 +12,6 @@ for jvm in ${jvms[@]}; do
     # docker push $user/jvm:$jvm
 done
 
-mkdir benchmarks/jars && cd benchmarks/jars &&
+mkdir benchmarks/jars && cd benchmarks/jars
 
 # download dacapo.jar and renaissance.jar in benchmarks/jar
