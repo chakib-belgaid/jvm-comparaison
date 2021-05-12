@@ -1,0 +1,675 @@
+--------------------------------------------
+15.0.1.j9-adpt_als_1
+1610564489
+# started on Wed Jan 13 20:01:29 2021
+
+
+ Performance counter stats for 'system wide':
+
+         78,517.72 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,312.81 Joules power/energy-ram/                                           
+        10,409,866        power:cpu_idle                                              
+
+    1216.491480873 seconds time elapsed
+
+1610565705
+--------------------------------------------
+20.2.0.r11-grl_als_1
+1610565710
+# started on Wed Jan 13 20:21:50 2021
+
+
+ Performance counter stats for 'system wide':
+
+         79,032.10 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,485.78 Joules power/energy-ram/                                           
+         8,454,890        power:cpu_idle                                              
+
+    1210.401170591 seconds time elapsed
+
+1610566921
+--------------------------------------------
+15.0.1-open_als_1
+1610566926
+# started on Wed Jan 13 20:42:06 2021
+
+
+ Performance counter stats for 'system wide':
+
+         78,088.34 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,267.26 Joules power/energy-ram/                                           
+         7,479,846        power:cpu_idle                                              
+
+    1212.048966068 seconds time elapsed
+
+1610568138
+--------------------------------------------
+15.0.1.j9-adpt_dotty_1
+1610568143
+# started on Wed Jan 13 21:02:23 2021
+
+
+ Performance counter stats for 'system wide':
+
+         56,295.65 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,799.53 Joules power/energy-ram/                                           
+        17,130,009        power:cpu_idle                                              
+
+    1207.556405770 seconds time elapsed
+
+1610569351
+--------------------------------------------
+20.2.0.r11-grl_dotty_1
+1610569356
+# started on Wed Jan 13 21:22:36 2021
+
+
+ Performance counter stats for 'system wide':
+
+         54,010.23 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,436.25 Joules power/energy-ram/                                           
+         5,005,826        power:cpu_idle                                              
+
+    1205.325925466 seconds time elapsed
+
+1610570561
+--------------------------------------------
+15.0.1-open_dotty_1
+1610570566
+# started on Wed Jan 13 21:42:47 2021
+
+
+ Performance counter stats for 'system wide':
+
+         55,112.20 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,460.06 Joules power/energy-ram/                                           
+         4,992,174        power:cpu_idle                                              
+
+    1205.856887949 seconds time elapsed
+
+1610571773
+--------------------------------------------
+15.0.1.j9-adpt_fj-kmeans_1
+1610571778
+# started on Wed Jan 13 22:02:58 2021
+
+
+ Performance counter stats for 'system wide':
+
+        117,392.91 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         26,768.92 Joules power/energy-ram/                                           
+       101,159,276        power:cpu_idle                                              
+
+    1207.153152474 seconds time elapsed
+
+1610572985
+--------------------------------------------
+20.2.0.r11-grl_fj-kmeans_1
+1610572990
+# started on Wed Jan 13 22:23:10 2021
+
+
+ Performance counter stats for 'system wide':
+
+        112,918.63 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         29,864.05 Joules power/energy-ram/                                           
+       107,408,830        power:cpu_idle                                              
+
+    1205.488818164 seconds time elapsed
+
+1610574196
+--------------------------------------------
+15.0.1-open_fj-kmeans_1
+1610574201
+# started on Wed Jan 13 22:43:21 2021
+
+
+ Performance counter stats for 'system wide':
+
+        113,879.12 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         30,136.62 Joules power/energy-ram/                                           
+       115,468,192        power:cpu_idle                                              
+
+    1206.011225196 seconds time elapsed
+
+1610575407
+--------------------------------------------
+15.0.1.j9-adpt_neo4j_1
+1610575412
+# started on Wed Jan 13 23:03:32 2021
+
+
+ Performance counter stats for 'system wide':
+
+         76,026.03 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         19,139.37 Joules power/energy-ram/                                           
+         7,934,556        power:cpu_idle                                              
+
+    1247.655755696 seconds time elapsed
+
+1610576660
+--------------------------------------------
+20.2.0.r11-grl_neo4j_1
+1610576665
+# started on Wed Jan 13 23:24:25 2021
+
+
+ Performance counter stats for 'system wide':
+
+         76,513.01 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         19,291.93 Joules power/energy-ram/                                           
+         6,388,410        power:cpu_idle                                              
+
+    1235.793395525 seconds time elapsed
+
+1610577901
+--------------------------------------------
+15.0.1-open_neo4j_1
+1610577906
+# started on Wed Jan 13 23:45:06 2021
+
+
+ Performance counter stats for 'system wide':
+
+         75,361.04 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,534.95 Joules power/energy-ram/                                           
+         9,393,662        power:cpu_idle                                              
+
+    1244.919548595 seconds time elapsed
+
+1610579151
+--------------------------------------------
+15.0.1.j9-adpt_philosopher_1
+1610579156
+# started on Thu Jan 14 00:05:56 2021
+
+
+ Performance counter stats for 'system wide':
+
+            104.05 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             27.03 Joules power/energy-ram/                                           
+            57,228        power:cpu_idle                                              
+
+       2.651937878 seconds time elapsed
+
+1610579159
+--------------------------------------------
+20.2.0.r11-grl_philosopher_1
+1610579164
+# started on Thu Jan 14 00:06:04 2021
+
+
+ Performance counter stats for 'system wide':
+
+             82.49 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             22.73 Joules power/energy-ram/                                           
+            31,302        power:cpu_idle                                              
+
+       2.307778356 seconds time elapsed
+
+1610579166
+--------------------------------------------
+15.0.1-open_philosopher_1
+1610579171
+# started on Thu Jan 14 00:06:11 2021
+
+
+ Performance counter stats for 'system wide':
+
+             73.39 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             20.60 Joules power/energy-ram/                                           
+            28,502        power:cpu_idle                                              
+
+       2.119858161 seconds time elapsed
+
+1610579173
+--------------------------------------------
+15.0.1.j9-adpt_reactors_1
+1610579178
+# started on Thu Jan 14 00:06:19 2021
+
+
+ Performance counter stats for 'system wide':
+
+         68,789.22 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,102.11 Joules power/energy-ram/                                           
+        54,718,080        power:cpu_idle                                              
+
+    1231.683104844 seconds time elapsed
+
+1610580410
+--------------------------------------------
+20.2.0.r11-grl_reactors_1
+1610580415
+# started on Thu Jan 14 00:26:55 2021
+
+
+ Performance counter stats for 'system wide':
+
+         76,701.99 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,501.83 Joules power/energy-ram/                                           
+       179,276,336        power:cpu_idle                                              
+
+    1275.717106156 seconds time elapsed
+
+1610581691
+--------------------------------------------
+15.0.1-open_reactors_1
+1610581696
+# started on Thu Jan 14 00:48:16 2021
+
+
+ Performance counter stats for 'system wide':
+
+         68,063.84 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,248.34 Joules power/energy-ram/                                           
+        70,201,354        power:cpu_idle                                              
+
+    1230.558266400 seconds time elapsed
+
+1610582927
+--------------------------------------------
+15.0.1.j9-adpt_scrabble_1
+1610582932
+# started on Thu Jan 14 01:08:52 2021
+
+
+ Performance counter stats for 'system wide':
+
+        111,538.43 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         24,059.10 Joules power/energy-ram/                                           
+        22,062,514        power:cpu_idle                                              
+
+    1204.410921409 seconds time elapsed
+
+1610584137
+--------------------------------------------
+20.2.0.r11-grl_scrabble_1
+1610584142
+# started on Thu Jan 14 01:29:02 2021
+
+
+ Performance counter stats for 'system wide':
+
+        127,994.28 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         31,041.73 Joules power/energy-ram/                                           
+        13,509,920        power:cpu_idle                                              
+
+    1203.542300105 seconds time elapsed
+
+1610585345
+--------------------------------------------
+15.0.1-open_scrabble_1
+1610585350
+# started on Thu Jan 14 01:49:11 2021
+
+
+ Performance counter stats for 'system wide':
+
+        117,914.31 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         28,062.10 Joules power/energy-ram/                                           
+        10,915,610        power:cpu_idle                                              
+
+    1203.141167042 seconds time elapsed
+
+1610586554
+--------------------------------------------
+15.0.1.j9-adpt_als_2
+1610586559
+# started on Thu Jan 14 02:09:19 2021
+
+
+ Performance counter stats for 'system wide':
+
+         78,670.96 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,345.45 Joules power/energy-ram/                                           
+        10,595,742        power:cpu_idle                                              
+
+    1217.427779861 seconds time elapsed
+
+1610587776
+--------------------------------------------
+20.2.0.r11-grl_als_2
+1610587781
+# started on Thu Jan 14 02:29:41 2021
+
+
+ Performance counter stats for 'system wide':
+
+         79,377.38 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,617.36 Joules power/energy-ram/                                           
+         8,493,620        power:cpu_idle                                              
+
+    1211.563676210 seconds time elapsed
+
+1610588993
+--------------------------------------------
+15.0.1-open_als_2
+1610588998
+# started on Thu Jan 14 02:49:58 2021
+
+
+ Performance counter stats for 'system wide':
+
+         77,908.69 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,312.90 Joules power/energy-ram/                                           
+         7,610,596        power:cpu_idle                                              
+
+    1210.178545960 seconds time elapsed
+
+1610590208
+--------------------------------------------
+15.0.1.j9-adpt_dotty_2
+1610590213
+# started on Thu Jan 14 03:10:14 2021
+
+
+ Performance counter stats for 'system wide':
+
+         56,794.10 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,841.39 Joules power/energy-ram/                                           
+        16,276,604        power:cpu_idle                                              
+
+    1208.880981558 seconds time elapsed
+
+1610591423
+--------------------------------------------
+20.2.0.r11-grl_dotty_2
+1610591428
+# started on Thu Jan 14 03:30:28 2021
+
+
+ Performance counter stats for 'system wide':
+
+         54,166.87 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,513.68 Joules power/energy-ram/                                           
+         4,853,728        power:cpu_idle                                              
+
+    1207.060346290 seconds time elapsed
+
+1610592635
+--------------------------------------------
+15.0.1-open_dotty_2
+1610592640
+# started on Thu Jan 14 03:50:40 2021
+
+
+ Performance counter stats for 'system wide':
+
+         54,210.26 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         16,462.03 Joules power/energy-ram/                                           
+         4,900,930        power:cpu_idle                                              
+
+    1204.999680206 seconds time elapsed
+
+1610593845
+--------------------------------------------
+15.0.1.j9-adpt_fj-kmeans_2
+1610593850
+# started on Thu Jan 14 04:10:50 2021
+
+
+ Performance counter stats for 'system wide':
+
+        116,021.05 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         27,127.87 Joules power/energy-ram/                                           
+       102,133,946        power:cpu_idle                                              
+
+    1206.595475654 seconds time elapsed
+
+1610595057
+--------------------------------------------
+20.2.0.r11-grl_fj-kmeans_2
+1610595062
+# started on Thu Jan 14 04:31:02 2021
+
+
+ Performance counter stats for 'system wide':
+
+        113,167.73 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         29,524.18 Joules power/energy-ram/                                           
+       109,637,052        power:cpu_idle                                              
+
+    1206.313968682 seconds time elapsed
+
+1610596268
+--------------------------------------------
+15.0.1-open_fj-kmeans_2
+1610596273
+# started on Thu Jan 14 04:51:13 2021
+
+
+ Performance counter stats for 'system wide':
+
+        112,988.57 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         29,874.81 Joules power/energy-ram/                                           
+       113,813,994        power:cpu_idle                                              
+
+    1205.475354422 seconds time elapsed
+
+1610597479
+--------------------------------------------
+15.0.1.j9-adpt_neo4j_2
+1610597484
+# started on Thu Jan 14 05:11:24 2021
+
+
+ Performance counter stats for 'system wide':
+
+         76,450.52 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         19,309.85 Joules power/energy-ram/                                           
+         7,737,986        power:cpu_idle                                              
+
+    1250.209390642 seconds time elapsed
+
+1610598734
+--------------------------------------------
+20.2.0.r11-grl_neo4j_2
+1610598739
+# started on Thu Jan 14 05:32:20 2021
+
+
+ Performance counter stats for 'system wide':
+
+         77,461.29 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         19,320.11 Joules power/energy-ram/                                           
+         6,589,840        power:cpu_idle                                              
+
+    1233.407293916 seconds time elapsed
+
+1610599973
+--------------------------------------------
+15.0.1-open_neo4j_2
+1610599978
+# started on Thu Jan 14 05:52:58 2021
+
+
+ Performance counter stats for 'system wide':
+
+         75,455.92 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,548.26 Joules power/energy-ram/                                           
+         8,871,246        power:cpu_idle                                              
+
+    1248.138228008 seconds time elapsed
+
+1610601226
+--------------------------------------------
+15.0.1.j9-adpt_philosopher_2
+1610601231
+# started on Thu Jan 14 06:13:51 2021
+
+
+ Performance counter stats for 'system wide':
+
+            106.79 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             27.39 Joules power/energy-ram/                                           
+            80,608        power:cpu_idle                                              
+
+       2.640752463 seconds time elapsed
+
+1610601234
+--------------------------------------------
+20.2.0.r11-grl_philosopher_2
+1610601239
+# started on Thu Jan 14 06:13:59 2021
+
+
+ Performance counter stats for 'system wide':
+
+             84.29 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             23.49 Joules power/energy-ram/                                           
+            34,400        power:cpu_idle                                              
+
+       2.349315979 seconds time elapsed
+
+1610601242
+--------------------------------------------
+15.0.1-open_philosopher_2
+1610601247
+# started on Thu Jan 14 06:14:07 2021
+
+
+ Performance counter stats for 'system wide':
+
+             77.22 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+             21.45 Joules power/energy-ram/                                           
+            49,644        power:cpu_idle                                              
+
+       2.149452188 seconds time elapsed
+
+1610601249
+--------------------------------------------
+15.0.1.j9-adpt_reactors_2
+1610601254
+# started on Thu Jan 14 06:14:14 2021
+
+
+ Performance counter stats for 'system wide':
+
+         68,751.88 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,087.82 Joules power/energy-ram/                                           
+        54,188,482        power:cpu_idle                                              
+
+    1222.906638946 seconds time elapsed
+
+1610602477
+--------------------------------------------
+20.2.0.r11-grl_reactors_2
+1610602482
+# started on Thu Jan 14 06:34:42 2021
+
+
+ Performance counter stats for 'system wide':
+
+         74,678.23 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         17,999.38 Joules power/energy-ram/                                           
+       177,451,770        power:cpu_idle                                              
+
+    1243.992036500 seconds time elapsed
+
+1610603726
+--------------------------------------------
+15.0.1-open_reactors_2
+1610603731
+# started on Thu Jan 14 06:55:32 2021
+
+
+ Performance counter stats for 'system wide':
+
+         68,881.39 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         18,491.15 Joules power/energy-ram/                                           
+        78,778,120        power:cpu_idle                                              
+
+    1237.553122974 seconds time elapsed
+
+1610604969
+--------------------------------------------
+15.0.1.j9-adpt_scrabble_2
+1610604974
+# started on Thu Jan 14 07:16:14 2021
+
+
+ Performance counter stats for 'system wide':
+
+        115,095.41 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         26,878.92 Joules power/energy-ram/                                           
+        38,920,880        power:cpu_idle                                              
+
+    1204.299021994 seconds time elapsed
+
+1610606179
+--------------------------------------------
+20.2.0.r11-grl_scrabble_2
+1610606184
+# started on Thu Jan 14 07:36:24 2021
+
+
+ Performance counter stats for 'system wide':
+
+        126,594.70 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         30,360.41 Joules power/energy-ram/                                           
+        12,221,924        power:cpu_idle                                              
+
+    1203.609611840 seconds time elapsed
+
+1610607387
+--------------------------------------------
+15.0.1-open_scrabble_2
+1610607392
+# started on Thu Jan 14 07:56:33 2021
+
+
+ Performance counter stats for 'system wide':
+
+        118,524.99 Joules power/energy-pkg/                                           
+              0.00 Joules power/energy-cores/                                         
+         28,714.44 Joules power/energy-ram/                                           
+        10,929,878        power:cpu_idle                                              
+
+    1203.469552044 seconds time elapsed
+
+1610608596
+--------------------------------------------
+15.0.1.j9-adpt_als_3
+1610608601

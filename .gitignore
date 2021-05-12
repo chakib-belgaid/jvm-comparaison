@@ -3,8 +3,7 @@ benchmarks/jars/*
 benchmarks/results/*
 powers/*
 nohup.out
-
+old_notebooks/*
 build_images.sh
-
 lab/*
 records/*

@@ -1,0 +1,1782 @@
+benchmark;jvm;options;iteration;exitcode;duration;DRAM;CPU
+avrora;20.2.0.r11-grl;default;1;0;73286259;972745740;3983679377
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;73364520;973633540;4014186441
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;68721700;913910724;3753649266
+avrora;15.0.1.j9-adpt;default;1;0;30360957;414611854;2004765376
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;1;0;31061145;425683685;2055839769
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;1;0;31122426;424556227;2050795653
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;1;0;30658225;420779530;2025668093
+avrora;15.0.1.j9-adpt; -Xjit:count=0;1;0;39695149;537925510;2460834582
+avrora;15.0.1.j9-adpt; -Xjit:count=1;1;0;31572152;438357562;2125868337
+avrora;15.0.1.j9-adpt; -Xjit:count=10;1;0;31151367;429501401;2096136603
+avrora;15.0.1.j9-adpt; -Xjit:count=100;1;0;30801715;422396340;2047724251
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;32109865;439679161;2139978957
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;32412073;442529152;2161757405
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;34490065;472075686;2317798021
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;44040030;599271012;3104301744
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;49698334;679970496;3528949645
+avrora;15.0.1-open;default;1;0;73087388;971425105;4070676042
+avrora;15.0.1-open; -XX:-TieredCompilation;1;0;72077125;955377151;3994640653
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;69247833;920045916;3850879973
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;71366796;948484317;3951243242
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;73582924;978601923;4075175542
+h2;20.2.0.r11-grl;default;1;0;39584434;541335910;1950076612
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;34800144;468318281;1742187007
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;53931743;726643022;2497775527
+h2;15.0.1.j9-adpt;default;1;0;45787922;626550544;2340795949
+h2;15.0.1.j9-adpt; -XcompilationThreads1;1;0;48264505;657146154;2514226962
+h2;15.0.1.j9-adpt; -XcompilationThreads3;1;0;48982390;670262278;2542421837
+h2;15.0.1.j9-adpt; -XcompilationThreads7;1;0;47486599;650502664;2457965448
+h2;15.0.1.j9-adpt; -Xjit:count=0;1;0;71050660;960785852;3486307359
+h2;15.0.1.j9-adpt; -Xjit:count=1;1;0;47777226;651450454;2543482868
+h2;15.0.1.j9-adpt; -Xjit:count=10;1;0;50371485;700802240;2820384199
+h2;15.0.1.j9-adpt; -Xjit:count=100;1;0;47096339;642560281;2517247218
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;61047210;822203135;2861890989
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;50304073;683614159;2483557058
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;67368179;943119495;3924963768
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;123479327;1677983849;7181403491
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;128490508;1742315805;7479520160
+h2;15.0.1-open;default;1;0;35915791;486533895;1786579411
+h2;15.0.1-open; -XX:-TieredCompilation;1;0;39925023;540912681;1926054395
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;54665483;732081927;2505792169
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;33120508;449796071;1664968943
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;34835313;470695412;1742896295
+pmd;20.2.0.r11-grl;default;1;0;5131201;70945029;289433585
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;5488384;84639217;362588427
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;5096834;66734546;271257544
+pmd;15.0.1.j9-adpt;default;1;0;4891982;62287050;270851418
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;1;0;5627914;72122241;335134579
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;1;0;5042197;63929092;280332840
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;1;0;4876757;65207590;279867387
+pmd;15.0.1.j9-adpt; -Xjit:count=0;1;0;16028741;208846331;744226366
+pmd;15.0.1.j9-adpt; -Xjit:count=1;1;0;4619264;58673986;280746900
+pmd;15.0.1.j9-adpt; -Xjit:count=10;1;0;4825202;61778997;304344314
+pmd;15.0.1.j9-adpt; -Xjit:count=100;1;0;4444026;56047863;258584239
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;5103256;64526832;266195913
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;6167540;82326760;408569939
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;11063626;157205709;861414970
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;11567818;152901131;747110088
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;12719168;168804365;837401910
+pmd;15.0.1-open;default;1;0;5172315;76013858;321712006
+pmd;15.0.1-open; -XX:-TieredCompilation;1;0;12423718;187490484;970683490
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;4444018;59295349;240372188
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;5026368;75793996;314993212
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;5157267;78936601;327084063
+sunflow;20.2.0.r11-grl;default;1;0;4557998;69590352;315020007
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;4473245;65816315;305682018
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;5130626;76822187;379362737
+sunflow;15.0.1.j9-adpt;default;1;0;6237301;92699441;448707348
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;1;0;8679254;132201012;668685849
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;1;0;6248146;91784149;439557346
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;1;0;6047790;89822903;423806471
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;1;0;18189982;246563906;917568513
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;1;0;6975667;102173736;521883858
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;1;0;7542382;116941450;573878597
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;1;0;9322076;145389841;739441161
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;5354033;74917627;373290548
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;4951021;69129272;337341666
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;6438184;93322610;495916822
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;14396895;201859158;1362738027
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;16798445;234278772;1638437518
+sunflow;15.0.1-open;default;1;0;4700414;71181920;336429070
+sunflow;15.0.1-open; -XX:-TieredCompilation;1;0;5453523;84564186;404325320
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;3881319;54420585;265096978
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;4540921;69742464;317133099
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;4671261;70581088;325485740
+als;20.2.0.r11-grl;default;1;0;45574655;665984076;2853098837
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;48690204;700530420;3126352470
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;71465225;1004811971;4483000364
+als;15.0.1.j9-adpt;default;1;0;58859207;835184573;3788157050
+als;15.0.1.j9-adpt; -XcompilationThreads1;1;0;66340864;938216533;4263598705
+als;15.0.1.j9-adpt; -XcompilationThreads3;1;0;59560478;847625325;3832914566
+als;15.0.1.j9-adpt; -XcompilationThreads7;1;0;59393743;844749673;3778853119
+als;15.0.1.j9-adpt; -Xjit:count=0;1;0;148475493;2025651471;8576309894
+als;15.0.1.j9-adpt; -Xjit:count=1;1;0;67407981;951862572;4309311234
+als;15.0.1.j9-adpt; -Xjit:count=10;1;0;61449312;885157585;4163229943
+als;15.0.1.j9-adpt; -Xjit:count=100;1;0;59231278;852111728;3928331862
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;105548348;1453626516;6760637722
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;70427062;994965074;4581710378
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;90967285;1354334029;7000444847
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;228828717;3130460677;15020422547
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;284138184;3907492138;18757160112
+als;15.0.1-open;default;1;0;47393885;684174337;3010652205
+als;15.0.1-open; -XX:-TieredCompilation;1;0;53519596;758834361;3249559369
+als;15.0.1-open; -XX:TieredStopAtLevel=1;1;50;14789604;200679726;794744303
+als;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;47421409;683109887;2990140233
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;47237392;682171568;3014983493
+dotty;20.2.0.r11-grl;default;1;0;38589618;551184749;2239349248
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;42562483;614132437;2682003266
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;75127986;1030726422;3476945689
+dotty;15.0.1.j9-adpt;default;1;0;58023762;822650277;3441802286
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;1;0;82113372;1140286341;4914872855
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;1;0;58964229;829923837;3526092353
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;1;0;58578537;822756827;3496220847
+dotty;15.0.1.j9-adpt; -Xjit:count=0;1;0;104089157;1405313048;4780047089
+dotty;15.0.1.j9-adpt; -Xjit:count=1;1;0;63231285;871830797;3167803536
+dotty;15.0.1.j9-adpt; -Xjit:count=10;1;0;54882531;817656020;3792878473
+dotty;15.0.1.j9-adpt; -Xjit:count=100;1;0;52797958;777170232;3477265939
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;97622906;1340763649;4886201359
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;69424583;997105514;4259786458
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;171369097;2717084574;13362870942
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;307676557;4189489038;18336141108
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;357944067;4885677717;21260142961
+dotty;15.0.1-open;default;1;0;40055006;576885582;2511090312
+dotty;15.0.1-open; -XX:-TieredCompilation;1;0;60269918;818849360;3118189526
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;73503106;993232152;3300360387
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;40439831;581225534;2535603372
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;39680620;574659982;2507613271
+neo4j;20.2.0.r11-grl;default;1;0;54413091;850640221;3200002123
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;85196514;1273291535;5133779948
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;176601022;2500665506;9821873660
+neo4j;15.0.1.j9-adpt;default;1;0;76047117;1119097324;4350274385
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;1;0;91205775;1329111750;5294993464
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;1;0;78592888;1164108410;4499511369
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;1;0;80553373;1198847153;4619320450
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;1;0;199531407;2797138166;10552732567
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;1;0;123644211;1770347914;6989060049
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;1;0;83586866;1246098662;5020631129
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;1;0;76144781;1132178671;4455912971
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;129650142;1865152620;7248702818
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;86956921;1283860820;5096988904
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;132189610;1984085992;8874530627
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;343619150;4751209017;21225540632
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;478794637;6582151906;29530564965
+neo4j;15.0.1-open;default;1;0;81996777;1234603452;4909644047
+neo4j;15.0.1-open; -XX:-TieredCompilation;1;0;67669817;1026750121;3880549208
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;151858528;2185053205;8600727494
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;78968989;1193736065;4721062437
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;79021967;1196242756;4709267669
+reactors;20.2.0.r11-grl;default;1;0;391104345;5723332063;23609190048
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;426569578;6217296449;25731180222
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;513883679;7394852365;30487337053
+reactors;15.0.1.j9-adpt;default;1;0;221395325;3308723762;12703167125
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;1;0;225541392;3366281107;13031606043
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;1;0;216869926;3238407930;12367136248
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;1;0;214740195;3194086921;12213021774
+reactors;15.0.1.j9-adpt; -Xjit:count=0;1;0;312492576;4536651058;17438577367
+reactors;15.0.1.j9-adpt; -Xjit:count=1;1;0;277335434;4057582231;15622868879
+reactors;15.0.1.j9-adpt; -Xjit:count=10;1;0;234857768;3502692938;13423336913
+reactors;15.0.1.j9-adpt; -Xjit:count=100;1;0;209988440;3130591003;11971634269
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;376532986;5392792407;20783304401
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;252636221;3726412645;13963477132
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;703821895;9920086552;40018658966
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;663499363;9401563814;38891229906
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;793938535;11196556890;47253705691
+reactors;15.0.1-open;default;1;0;214583371;3231942884;12070905134
+reactors;15.0.1-open; -XX:-TieredCompilation;1;0;202454481;3052369568;11553738794
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;416186532;6113815526;22660208164
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;196778155;2994622748;11123739163
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;211663033;3199684486;11832615216
+scrabble;20.2.0.r11-grl;default;1;0;6402093;116409162;457280934
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;6859570;125046839;508147198
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;8180151;145780619;656015227
+scrabble;15.0.1.j9-adpt;default;1;0;11297985;171277412;693554926
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;1;0;14191956;220167841;968728660
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;1;0;11277839;174991257;737268011
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;1;0;11394035;178013724;760401007
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;1;0;25326072;377151243;1514903959
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;1;0;13994153;225087511;1024437747
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;1;0;13900535;221059006;925404492
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;1;0;11449826;176897009;744405627
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;11469302;177025987;789396843
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;14028255;219028894;938177897
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;16391993;256666481;1213397833
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;53094618;892449321;5375454378
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;56153207;936431206;5683643775
+scrabble;15.0.1-open;default;1;0;7055939;127794352;528667714
+scrabble;15.0.1-open; -XX:-TieredCompilation;1;0;8045784;146001765;628612160
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;8695311;156043293;740944209
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;7218770;129697151;535931550
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;7012740;128554945;523788759
+fj-kmeans;20.2.0.r11-grl;default;1;0;11969786;248092819;947538041
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;1;0;11932632;248226038;937641521
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;1;0;15295572;309462390;1313294855
+fj-kmeans;15.0.1.j9-adpt;default;1;0;16985966;311163857;1305456803
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;1;0;15913989;295730304;1258601881
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;1;0;16476328;303820576;1295514995
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;1;0;16586076;300378413;1261656438
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;1;0;30838985;503306612;2293192617
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;1;0;20468065;364829219;1850326013
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;1;0;16042983;296808495;1297748020
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;1;0;15867981;297474779;1256023090
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;1;0;18353793;335070658;1577329032
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;1;0;15321370;285877257;1219841421
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;1;0;17622003;328933614;1471342853
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;1;0;33461992;544160106;2408494933
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;1;0;36744413;590310857;2689517346
+fj-kmeans;15.0.1-open;default;1;0;11504463;241718104;925214794
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;1;0;11256527;239143452;895250578
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;1;0;14473250;293329138;1249051917
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;1;0;11573329;244892627;937921487
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;1;0;11392218;242140172;920343469
+avrora;20.2.0.r11-grl;default;2;0;68923907;916547555;3606969160
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;70136775;933559581;3716365730
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;69472959;925552018;3817430229
+avrora;15.0.1.j9-adpt;default;2;0;31743408;440022018;2123847102
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;2;0;32263753;443351834;2136834190
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;2;0;32023661;439361317;2133695954
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;2;0;30631108;425020704;2056033189
+avrora;15.0.1.j9-adpt; -Xjit:count=0;2;0;39508933;538534709;2455008975
+avrora;15.0.1.j9-adpt; -Xjit:count=1;2;0;32143106;443543787;2171360714
+avrora;15.0.1.j9-adpt; -Xjit:count=10;2;0;30917549;425020628;2075272946
+avrora;15.0.1.j9-adpt; -Xjit:count=100;2;0;31361162;430607622;2088314661
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;32061600;441596893;2159565150
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;30846452;421285025;2044333878
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;33911745;467314050;2322585119
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;47504055;648367993;3344910626
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;50861705;693129810;3600788451
+avrora;15.0.1-open;default;2;0;72905334;973424617;4043468164
+avrora;15.0.1-open; -XX:-TieredCompilation;2;0;72252684;960513483;3992402316
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;68846963;915733443;3773325301
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;72790798;968658851;4040092686
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;71940493;959333241;3981785644
+h2;20.2.0.r11-grl;default;2;0;40664353;561997580;2071704230
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;36882005;506056358;2004718866
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;54863495;738305126;2570827037
+h2;15.0.1.j9-adpt;default;2;0;45973552;630072359;2337334471
+h2;15.0.1.j9-adpt; -XcompilationThreads1;2;0;50031225;681542953;2571674203
+h2;15.0.1.j9-adpt; -XcompilationThreads3;2;0;45992688;631269263;2382054327
+h2;15.0.1.j9-adpt; -XcompilationThreads7;2;0;47266041;646690440;2393531165
+h2;15.0.1.j9-adpt; -Xjit:count=0;2;0;70762825;949408146;3315438534
+h2;15.0.1.j9-adpt; -Xjit:count=1;2;0;53290293;722850198;2669074222
+h2;15.0.1.j9-adpt; -Xjit:count=10;2;0;50729935;700557747;2845154337
+h2;15.0.1.j9-adpt; -Xjit:count=100;2;0;47338083;649583272;2506470878
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;60677476;816537683;2883504459
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;50872588;693286606;2558720928
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;65006337;917596401;3989957377
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;127515625;1732972386;7426840423
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;132473630;1801738985;7775616752
+h2;15.0.1-open;default;2;0;34060235;466662439;1813990533
+h2;15.0.1-open; -XX:-TieredCompilation;2;0;38738141;522915107;1962378032
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;54827953;736830345;2599828183
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;34282003;458648283;1691722415
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;32328842;438574684;1609187958
+pmd;20.2.0.r11-grl;default;2;0;5181891;72872232;297593111
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;5416081;83758641;352942944
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;5100442;66681714;267468675
+pmd;15.0.1.j9-adpt;default;2;0;5131468;66026309;274784575
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;2;0;5723930;77824919;352193678
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;2;0;5337794;69206872;301477500
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;2;0;4997903;63676794;273640107
+pmd;15.0.1.j9-adpt; -Xjit:count=0;2;0;15949877;206465789;732335101
+pmd;15.0.1.j9-adpt; -Xjit:count=1;2;0;4572297;58081997;269985820
+pmd;15.0.1.j9-adpt; -Xjit:count=10;2;0;4769129;61319860;295873388
+pmd;15.0.1.j9-adpt; -Xjit:count=100;2;0;4706560;61524757;276269190
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;5327489;67687552;276170864
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;6197943;83717056;410978623
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;11058462;159763396;860817498
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;12336920;164787502;817021834
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;12632132;170049157;833867312
+pmd;15.0.1-open;default;2;0;5222160;77923267;325636495
+pmd;15.0.1-open; -XX:-TieredCompilation;2;0;11659383;177920456;914693947
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;4648446;57660789;222195597
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;5201884;78327477;328334609
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;5097095;80301928;331634222
+sunflow;20.2.0.r11-grl;default;2;0;5139332;81863843;367704382
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;5265652;80795766;372954307
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;4984566;74816251;359142452
+sunflow;15.0.1.j9-adpt;default;2;0;6734973;101068006;481331959
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;2;0;6946175;103677252;510138342
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;2;0;6048976;89946909;425667794
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;2;0;6253938;94017995;440703095
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;2;0;18548113;256639369;962086588
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;2;0;6636135;96308634;491039758
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;2;0;7596572;114917076;573490415
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;2;0;6327322;96556113;473586251
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;5528381;77327225;385460195
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;4859023;71584921;337748707
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;6383388;93507251;499164677
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;15802764;220181322;1519805008
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;16399129;226526384;1584404697
+sunflow;15.0.1-open;default;2;0;4717214;72069625;333595520
+sunflow;15.0.1-open; -XX:-TieredCompilation;2;0;5261960;83506743;393586272
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;3978381;55551882;266156790
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;4230940;65792708;304263870
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;4916431;78798090;368711825
+als;20.2.0.r11-grl;default;2;0;45124091;662141925;2852517784
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;47399535;679347464;3060394814
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;71568438;1009053803;4511637255
+als;15.0.1.j9-adpt;default;2;0;58463013;834611818;3802669220
+als;15.0.1.j9-adpt; -XcompilationThreads1;2;0;64857324;920558849;4137658231
+als;15.0.1.j9-adpt; -XcompilationThreads3;2;0;60334464;861607398;3868407822
+als;15.0.1.j9-adpt; -XcompilationThreads7;2;0;60835867;863071195;3863846188
+als;15.0.1.j9-adpt; -Xjit:count=0;2;0;143814655;1967204232;8283770785
+als;15.0.1.j9-adpt; -Xjit:count=1;2;0;66727480;940364913;4234283655
+als;15.0.1.j9-adpt; -Xjit:count=10;2;0;57994677;836785076;3949991353
+als;15.0.1.j9-adpt; -Xjit:count=100;2;0;58200797;835715162;3842221427
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;106732097;1470522566;6808023831
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;73269226;1035500067;4745072081
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;101617059;1493788602;7721732307
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;239510623;3273662848;15668440968
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;281601693;3860974109;18623758597
+als;15.0.1-open;default;2;0;47753243;687278524;3035230633
+als;15.0.1-open; -XX:-TieredCompilation;2;0;52803836;738816528;3206626617
+als;15.0.1-open; -XX:TieredStopAtLevel=1;2;50;14972093;203564282;805080459
+als;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;46848546;664525650;2951892223
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;47110442;675890077;3001995611
+dotty;20.2.0.r11-grl;default;2;0;38400359;547884539;2251024450
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;42578231;611773514;2686781025
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;73880443;1008172508;3468488557
+dotty;15.0.1.j9-adpt;default;2;0;58511644;828605801;3517366301
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;2;0;77889944;1078422978;4651425775
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;2;0;59874729;848130071;3623389711
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;2;0;58517317;828279193;3482955194
+dotty;15.0.1.j9-adpt; -Xjit:count=0;2;0;106923798;1442854061;4905014115
+dotty;15.0.1.j9-adpt; -Xjit:count=1;2;0;61561416;852514378;3102995963
+dotty;15.0.1.j9-adpt; -Xjit:count=10;2;0;54609196;812551666;3768520320
+dotty;15.0.1.j9-adpt; -Xjit:count=100;2;0;52598640;774752479;3446937709
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;98234775;1350341311;4885055426
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;67875040;955206203;4095796155
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;163789058;2602043950;12949270805
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;310827412;4221881908;18545349680
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;359105554;4894987385;21344472396
+dotty;15.0.1-open;default;2;0;39511391;571299828;2512366249
+dotty;15.0.1-open; -XX:-TieredCompilation;2;0;59194484;799791114;3125930657
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;72991959;982090844;3292309321
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;40250827;580677075;2529366206
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;40703044;587659719;2565454370
+neo4j;20.2.0.r11-grl;default;2;0;55155944;857171454;3237899731
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;84392760;1268513591;5108754806
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;163075740;2324488133;9274192628
+neo4j;15.0.1.j9-adpt;default;2;0;75130485;1111496683;4301008155
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;2;0;84866902;1245303306;4850119969
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;2;0;78856909;1164732374;4533216666
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;2;0;77103425;1135195297;4374506684
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;2;0;198284008;2773467032;10531221697
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;2;0;120892995;1739546031;6833131982
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;2;0;80213677;1190780212;4787495862
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;2;0;76994957;1146406616;4547236528
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;130433848;1866981995;7282504611
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;91255036;1343453006;5307324243
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;135282094;2025041812;9149369033
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;337049641;4664175885;20769810294
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;484211119;6635623953;29890025043
+neo4j;15.0.1-open;default;2;0;79117986;1196317801;4738169144
+neo4j;15.0.1-open; -XX:-TieredCompilation;2;0;66184176;1006465839;3825279575
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;142166803;2047295493;8072031338
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;81748832;1237936831;4907777963
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;78927350;1191559854;4731106236
+reactors;20.2.0.r11-grl;default;2;0;373124193;5459822702;22531441038
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;387348479;5669026242;23167697526
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;490629247;7045019731;28868469370
+reactors;15.0.1.j9-adpt;default;2;0;220457164;3278089367;12618999434
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;2;0;217471314;3237125178;12581231586
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;2;0;220235407;3290073292;12623232638
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;2;0;229591154;3408496928;12968864017
+reactors;15.0.1.j9-adpt; -Xjit:count=0;2;0;322109874;4663841778;17952208376
+reactors;15.0.1.j9-adpt; -Xjit:count=1;2;0;269673908;3910094699;14953211842
+reactors;15.0.1.j9-adpt; -Xjit:count=10;2;0;239895193;3570398056;13645929240
+reactors;15.0.1.j9-adpt; -Xjit:count=100;2;0;214277312;3199065557;12132837287
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;362893512;5201161010;20034100384
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;250017794;3708115727;13872288340
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;620018639;8768889108;35779639178
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;647000060;9145354435;37673529532
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;699926328;9890262874;41686217439
+reactors;15.0.1-open;default;2;0;195426767;2968173792;11011112131
+reactors;15.0.1-open; -XX:-TieredCompilation;2;0;194660191;2943730955;11190822915
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;416868560;6090865189;22501432447
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;196396035;2977504725;11015445005
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;203410220;3070494774;11358545446
+scrabble;20.2.0.r11-grl;default;2;0;6144190;111084396;438015542
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;6541357;122895445;498169990
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;7981970;142027789;641864446
+scrabble;15.0.1.j9-adpt;default;2;0;10520301;160147746;668616513
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;2;0;13597800;212831951;936491743
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;2;0;12477675;191598136;808439642
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;2;0;12883979;198484267;812578791
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;2;0;23347902;351031618;1432781915
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;2;0;14014780;220896718;1008155195
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;2;0;12964275;202614198;866726176
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;2;0;12173979;190364053;792827926
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;13116005;197569710;820924534
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;11814182;186495830;814841358
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;15846287;247863596;1182903283
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;53784805;887089258;5418537520
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;55693293;936740312;5678515188
+scrabble;15.0.1-open;default;2;0;6839952;123755106;511872103
+scrabble;15.0.1-open; -XX:-TieredCompilation;2;0;7418924;135551988;568311716
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;8699647;149833833;734080214
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;7175389;131678869;540822590
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;7296693;131780905;541361651
+fj-kmeans;20.2.0.r11-grl;default;2;0;11903769;248770105;948662306
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;2;0;11599338;240583932;911613817
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;2;0;15436417;309756763;1319065959
+fj-kmeans;15.0.1.j9-adpt;default;2;0;16454789;299343887;1271698650
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;2;0;16185842;300315791;1286006351
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;2;0;15451909;289592433;1230838951
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;2;0;15603876;291706847;1255915059
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;2;0;30872038;501560744;2293909838
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;2;0;20593496;368218200;1852191243
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;2;0;16246895;301721049;1315258351
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;2;0;15674633;292685038;1232822528
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;2;0;18607967;339227942;1599290095
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;2;0;15102869;284350883;1217309444
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;2;0;18390273;336880326;1496742262
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;2;0;34876903;567555244;2595431528
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;2;0;32874787;539279559;2516773281
+fj-kmeans;15.0.1-open;default;2;0;11659714;246502126;947228960
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;2;0;11437314;239805239;908298212
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;2;0;14572460;293241299;1269089952
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;2;0;11456403;244919829;932879265
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;2;0;11572283;242898623;928127202
+avrora;20.2.0.r11-grl;default;3;0;69451088;922370368;3737635939
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;73698312;982029766;4102019528
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;69526741;923098113;3890268178
+avrora;15.0.1.j9-adpt;default;3;0;32194912;444363179;2159979883
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;3;0;31198143;430119078;2087617459
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;3;0;30713507;417814634;2024565741
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;3;0;31736257;439110322;2141808054
+avrora;15.0.1.j9-adpt; -Xjit:count=0;3;0;39425444;537669953;2466726900
+avrora;15.0.1.j9-adpt; -Xjit:count=1;3;0;32856084;449730097;2213565928
+avrora;15.0.1.j9-adpt; -Xjit:count=10;3;0;32321721;443285660;2182170683
+avrora;15.0.1.j9-adpt; -Xjit:count=100;3;0;30527808;417599301;2040206935
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;32643238;446587508;2193267884
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;32058733;436980914;2124413446
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;33856433;468115342;2315797905
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;45615458;620246990;3210346335
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;48530253;663192347;3448323875
+avrora;15.0.1-open;default;3;0;72752316;972140871;4085898476
+avrora;15.0.1-open; -XX:-TieredCompilation;3;0;69964643;930505868;3817540214
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;67200888;892598313;3671513611
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;72683179;965080042;4022880325
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;71130365;944298772;3871339517
+h2;20.2.0.r11-grl;default;3;0;39418504;537786525;1918489352
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;34474674;461755331;1722304673
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;53671471;721945418;2514498263
+h2;15.0.1.j9-adpt;default;3;0;45372843;616004454;2313256407
+h2;15.0.1.j9-adpt; -XcompilationThreads1;3;0;47742174;645889331;2533502242
+h2;15.0.1.j9-adpt; -XcompilationThreads3;3;0;41003141;562004650;2232813620
+h2;15.0.1.j9-adpt; -XcompilationThreads7;3;0;50348974;688133473;2634514130
+h2;15.0.1.j9-adpt; -Xjit:count=0;3;0;60614259;815212382;2889797960
+h2;15.0.1.j9-adpt; -Xjit:count=1;3;0;52960225;721329530;2676614852
+h2;15.0.1.j9-adpt; -Xjit:count=10;3;0;49484104;683366361;2784619642
+h2;15.0.1.j9-adpt; -Xjit:count=100;3;0;47809522;652582639;2527460449
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;61019660;819186908;2836382815
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;52580267;713259210;2565147242
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;62981817;887837580;3772722703
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;128177713;1738887870;7518734048
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;138834329;1885127810;8152496524
+h2;15.0.1-open;default;3;0;33544223;457901904;1804864704
+h2;15.0.1-open; -XX:-TieredCompilation;3;0;35851269;478004252;1739741885
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;54055367;722470682;2477766972
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;34210683;458515281;1660013817
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;35531706;479596554;1740042421
+pmd;20.2.0.r11-grl;default;3;0;5173454;71747300;296764072
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;5485077;85426019;361821095
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;5185741;67940538;271850439
+pmd;15.0.1.j9-adpt;default;3;0;5216088;66294119;282518441
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;3;0;5695968;74293863;341052471
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;3;0;5217409;69006167;300536767
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;3;0;5280402;66588201;280061356
+pmd;15.0.1.j9-adpt; -Xjit:count=0;3;0;15815487;206786874;719045217
+pmd;15.0.1.j9-adpt; -Xjit:count=1;3;0;4790473;60173691;277005089
+pmd;15.0.1.j9-adpt; -Xjit:count=10;3;0;4957511;63213005;301015525
+pmd;15.0.1.j9-adpt; -Xjit:count=100;3;0;4643293;59138723;266757191
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;5329617;67216235;274229583
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;6297425;84735990;415029515
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;11334246;163277912;883552974
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;12310410;166294568;812810235
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;12533105;167630701;820059851
+pmd;15.0.1-open;default;3;0;5076113;75930397;318076823
+pmd;15.0.1-open; -XX:-TieredCompilation;3;0;11954446;181094105;938178568
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;4786634;58357644;224054724
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;5117928;77810904;324592431
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;5200090;78524940;330054514
+sunflow;20.2.0.r11-grl;default;3;0;4819784;72750828;325482749
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;5029428;76633723;357670044
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;5049994;78554163;374278584
+sunflow;15.0.1.j9-adpt;default;3;0;6143327;90537613;435747298
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;3;0;9717311;144658883;782644298
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;3;0;6163721;90860565;438892370
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;3;0;6107251;90499302;435504928
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;3;0;17895455;244838022;914097209
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;3;0;6716303;102083727;502845087
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;3;0;8578433;130744559;650336775
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;3;0;8760235;136360638;685621048
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;5472190;76158259;385584097
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;5161568;70498192;336152338
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;6370731;96033602;491986168
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;15262704;213138149;1458602285
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;18692167;258148639;1842418135
+sunflow;15.0.1-open;default;3;0;4479281;66936398;311866207
+sunflow;15.0.1-open; -XX:-TieredCompilation;3;0;5376448;81163104;383581416
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;3929425;54301811;266281118
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;4752165;74237191;340616560
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;5007977;79360274;370398222
+als;20.2.0.r11-grl;default;3;0;44722741;646283077;2810191781
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;48101014;688623287;3061034645
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;71650660;1007060734;4530971311
+als;15.0.1.j9-adpt;default;3;0;60549945;860948061;3837448306
+als;15.0.1.j9-adpt; -XcompilationThreads1;3;0;66015093;932021746;4213157915
+als;15.0.1.j9-adpt; -XcompilationThreads3;3;0;60384702;857034824;3848874180
+als;15.0.1.j9-adpt; -XcompilationThreads7;3;0;61538384;874331077;3917410077
+als;15.0.1.j9-adpt; -Xjit:count=0;3;0;148924750;2035701704;8613203049
+als;15.0.1.j9-adpt; -Xjit:count=1;3;0;66259850;931365928;4187146080
+als;15.0.1.j9-adpt; -Xjit:count=10;3;0;59569215;860538418;4072237987
+als;15.0.1.j9-adpt; -Xjit:count=100;3;0;58818010;846384602;3931452277
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;106378193;1466597549;6787099752
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;70077635;990292088;4571777115
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;100556179;1471853927;7672694348
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;235195935;3216606057;15434200295
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;277947551;3804063969;18452672243
+als;15.0.1-open;default;3;0;46714809;666894778;2992721708
+als;15.0.1-open; -XX:-TieredCompilation;3;0;53322619;753935041;3255113188
+als;15.0.1-open; -XX:TieredStopAtLevel=1;3;50;14878584;203808179;805610243
+als;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;47303779;674052517;2966469395
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;47634633;682033164;3015997651
+dotty;20.2.0.r11-grl;default;3;0;38680385;550298084;2242050413
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;43062456;618011584;2706205657
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;74999927;1022756790;3476512646
+dotty;15.0.1.j9-adpt;default;3;0;59648957;845866942;3600651915
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;3;0;82977665;1152639607;4919337626
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;3;0;59881872;840085072;3608803567
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;3;0;57868934;818431394;3491541172
+dotty;15.0.1.j9-adpt; -Xjit:count=0;3;0;106093639;1429407794;4837679876
+dotty;15.0.1.j9-adpt; -Xjit:count=1;3;0;61776570;851324803;3121703739
+dotty;15.0.1.j9-adpt; -Xjit:count=10;3;0;54006947;799690685;3741625981
+dotty;15.0.1.j9-adpt; -Xjit:count=100;3;0;53256603;779756559;3492762299
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;97739819;1344700446;4949914819
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;69458868;995431051;4280434965
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;158225138;2523562400;12582632767
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;305277357;4144988683;18122552056
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;372658536;5058566661;22030727904
+dotty;15.0.1-open;default;3;0;40389320;581651332;2538620150
+dotty;15.0.1-open; -XX:-TieredCompilation;3;0;60918406;827125176;3180966039
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;74278482;1001903518;3309177259
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;39697701;576142400;2537684055
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;39828336;572315991;2491755828
+neo4j;20.2.0.r11-grl;default;3;0;55439231;860111899;3252264745
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;82149893;1229677156;4933751347
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;175213989;2479148704;9797558414
+neo4j;15.0.1.j9-adpt;default;3;0;76609984;1130420810;4341173701
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;3;0;84101352;1236491409;4822218977
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;3;0;78269488;1156281467;4477056654
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;3;0;77839266;1148108986;4424265040
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;3;0;200204264;2798941562;10559261299
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;3;0;130255769;1870802558;7421244613
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;3;0;82062151;1223510553;4921587315
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;3;0;76635604;1139734348;4514336587
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;129863972;1856029842;7189535672
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;94333390;1384261471;5446718479
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;133807322;1996090709;9044132792
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;340807730;4693008764;21019188928
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;487361023;6685491458;30109204720
+neo4j;15.0.1-open;default;3;0;80265756;1203836651;4783844076
+neo4j;15.0.1-open; -XX:-TieredCompilation;3;0;68500483;1042435818;3949625326
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;146616143;2104199576;8411873241
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;78233756;1185032246;4678147265
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;78890784;1189696803;4732269867
+reactors;20.2.0.r11-grl;default;3;0;389540489;5690308711;23540234781
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;413698936;6020295592;24967653306
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;518950251;7490885522;30883377908
+reactors;15.0.1.j9-adpt;default;3;0;217460578;3264674388;12641928697
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;3;0;222807218;3301424238;13009048301
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;3;0;225104533;3358131744;12935083463
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;3;0;212124969;3135803117;11999352338
+reactors;15.0.1.j9-adpt; -Xjit:count=0;3;0;322247557;4657028550;18015278528
+reactors;15.0.1.j9-adpt; -Xjit:count=1;3;0;256631790;3733640227;14308447622
+reactors;15.0.1.j9-adpt; -Xjit:count=10;3;0;238579974;3565982353;13609920176
+reactors;15.0.1.j9-adpt; -Xjit:count=100;3;0;216056992;3222530310;12188832506
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;368307541;5276033334;20304753134
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;240253220;3562165553;13223814352
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;616431119;8724804085;35646270927
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;652164530;9206702004;38051173524
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;947076364;13128134431;53588176474
+reactors;15.0.1-open;default;3;0;202574736;3072308620;11431627290
+reactors;15.0.1-open; -XX:-TieredCompilation;3;0;197142759;2980459095;11202675362
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;412111731;6048215338;22415966479
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;211708576;3170291458;11794552814
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;212404233;3193789565;11812265537
+scrabble;20.2.0.r11-grl;default;3;0;6166557;110020204;439315710
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;6545614;121986074;495996350
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;8215916;143964891;645632808
+scrabble;15.0.1.j9-adpt;default;3;0;11659707;182283099;754948690
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;3;0;13835912;218496776;977598144
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;3;0;13024711;198750075;827849260
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;3;0;14641201;224520830;942779508
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;3;0;24767401;374199766;1526523009
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;3;0;14848101;240800197;1069698311
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;3;0;12035156;191343468;815320178
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;3;0;12413780;193934615;815696642
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;13230431;206169290;899737077
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;13938904;217982956;938486183
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;16661641;259692577;1250758151
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;48464400;829746694;4874017612
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;54415208;904596129;5572909134
+scrabble;15.0.1-open;default;3;0;6892001;129188412;536075837
+scrabble;15.0.1-open; -XX:-TieredCompilation;3;0;7126527;128268331;547302920
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;8659200;153889388;736771552
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;7130630;128425217;526471126
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;7429626;137716065;565418413
+fj-kmeans;20.2.0.r11-grl;default;3;0;11807126;247006979;940582127
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;3;0;12090165;246343817;945258383
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;3;0;15266597;314621978;1312144896
+fj-kmeans;15.0.1.j9-adpt;default;3;0;16489700;301985066;1278940451
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;3;0;16067531;300542949;1277323756
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;3;0;16489757;297834130;1257484513
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;3;0;15860802;293782613;1247807657
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;3;0;30778181;502246581;2294186144
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;3;0;20449183;363541112;1844422279
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;3;0;15749330;295618216;1274653659
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;3;0;16541853;308500066;1323552398
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;3;0;18672854;340554315;1593004834
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;3;0;15649752;290632435;1248522988
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;3;0;17343435;322949646;1457580071
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;3;0;36445060;583350642;2637254906
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;3;0;27853764;473886273;2251275975
+fj-kmeans;15.0.1-open;default;3;0;11767556;245470339;942542692
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;3;0;11528419;243176440;919163053
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;3;0;14406324;295426017;1271665141
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;3;0;11531891;243086262;927781378
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;3;0;11792083;243773263;942671721
+avrora;20.2.0.r11-grl;default;4;0;72805675;968989958;4039932895
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;72909308;970374409;4037549418
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;71899897;955913400;4032284661
+avrora;15.0.1.j9-adpt;default;4;0;32175956;444466927;2149592337
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;4;0;32084001;440501351;2129376690
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;4;0;31961842;438082024;2135101834
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;4;0;71167335;971762670;4588344088
+avrora;15.0.1.j9-adpt; -Xjit:count=0;4;0;37774929;510756535;2319616437
+avrora;15.0.1.j9-adpt; -Xjit:count=1;4;0;33062523;453527053;2207788355
+avrora;15.0.1.j9-adpt; -Xjit:count=10;4;0;31029528;424491494;2073975343
+avrora;15.0.1.j9-adpt; -Xjit:count=100;4;0;33010360;453513358;2201493631
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;32279978;443803168;2156312045
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;32303585;444100081;2139567216
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;34410421;476210756;2329795000
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;46533350;635305741;3269863517
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;48393384;661074275;3401609089
+avrora;15.0.1-open;default;4;0;72521172;965305703;4008332452
+avrora;15.0.1-open; -XX:-TieredCompilation;4;0;71028226;947537705;3858375559
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;68271520;906138552;3751581156
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;70925134;942668465;3917717510
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;72800755;968151961;4025483652
+h2;20.2.0.r11-grl;default;4;0;37328831;508639717;1829601457
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;35335592;479368293;1786270573
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;54454105;731198796;2562048494
+h2;15.0.1.j9-adpt;default;4;0;46289091;634908171;2449098955
+h2;15.0.1.j9-adpt; -XcompilationThreads1;4;0;48039536;655933506;2511597512
+h2;15.0.1.j9-adpt; -XcompilationThreads3;4;0;45893779;626658854;2368149944
+h2;15.0.1.j9-adpt; -XcompilationThreads7;4;0;45715520;626774399;2363110649
+h2;15.0.1.j9-adpt; -Xjit:count=0;4;0;64979786;883380858;3191118051
+h2;15.0.1.j9-adpt; -Xjit:count=1;4;0;45599473;619337711;2306675186
+h2;15.0.1.j9-adpt; -Xjit:count=10;4;0;51118170;710496458;2857705879
+h2;15.0.1.j9-adpt; -Xjit:count=100;4;0;47484800;653224793;2566289878
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;61964991;835251327;2934178707
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;47642077;649364328;2439979594
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;64355853;901840844;3711085226
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;122935863;1665342010;7231356122
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;137180531;1859292995;7938935609
+h2;15.0.1-open;default;4;0;35877170;487624464;1838520989
+h2;15.0.1-open; -XX:-TieredCompilation;4;0;39616809;533057905;1904450203
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;54724568;733295233;2528471921
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;34768023;474260603;1756785053
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;32332729;436808467;1611522913
+pmd;20.2.0.r11-grl;default;4;0;5183992;71142292;293910564
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;5455403;86888593;367595433
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;4896152;66994630;271875646
+pmd;15.0.1.j9-adpt;default;4;0;4779638;59502556;254355977
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;4;0;6149584;80672310;372502953
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;4;0;5217874;67436051;291931443
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;4;0;4877279;60725301;263464413
+pmd;15.0.1.j9-adpt; -Xjit:count=0;4;0;16848547;218735226;771776773
+pmd;15.0.1.j9-adpt; -Xjit:count=1;4;0;4627355;57371818;268109971
+pmd;15.0.1.j9-adpt; -Xjit:count=10;4;0;4717483;60427060;292095200
+pmd;15.0.1.j9-adpt; -Xjit:count=100;4;0;4561876;56773052;256433974
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;5363138;67319647;275470486
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;6105377;81074424;409220327
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;10972810;155585577;844534948
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;11886301;156786582;760547736
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;12136542;162249325;815745714
+pmd;15.0.1-open;default;4;0;5201921;78729515;325908406
+pmd;15.0.1-open; -XX:-TieredCompilation;4;0;11948823;179539364;928320683
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;4725383;57464520;219560901
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;5092584;77574135;324478173
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;5080992;79253863;331920597
+sunflow;20.2.0.r11-grl;default;4;0;4827782;74569017;335309688
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;5074725;78300260;356295841
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;5490761;85165721;411368880
+sunflow;15.0.1.j9-adpt;default;4;0;7103411;106334174;515550256
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;4;0;7043977;105058811;516350057
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;4;0;6719701;100103662;494539688
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;4;0;6695654;101097321;478566158
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;4;0;18222171;248189349;931050656
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;4;0;7051617;107492598;534603489
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;4;0;48317040;731358314;3325179110
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;4;0;7788163;119016466;596281737
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;5366733;75248629;385174367
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;5105688;71600956;342776161
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;6580723;96726937;508650431
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;22333057;311025928;2268938527
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;18616013;258522035;1829552201
+sunflow;15.0.1-open;default;4;0;5234714;78441402;378690254
+sunflow;15.0.1-open; -XX:-TieredCompilation;4;0;5594454;84101560;406966426
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;4243315;62720896;302402851
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;4675193;71426306;333399902
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;4333390;64314881;298775419
+als;20.2.0.r11-grl;default;4;0;45896596;662396241;2846356666
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;48637625;694176469;3111955657
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;71336312;1001735876;4511818406
+als;15.0.1.j9-adpt;default;4;0;59726443;850690725;3825484897
+als;15.0.1.j9-adpt; -XcompilationThreads1;4;0;64580833;911172635;4160375092
+als;15.0.1.j9-adpt; -XcompilationThreads3;4;0;58372236;829727339;3746164788
+als;15.0.1.j9-adpt; -XcompilationThreads7;4;0;60406852;863088729;3869139142
+als;15.0.1.j9-adpt; -Xjit:count=0;4;0;144278390;1969712621;8373983261
+als;15.0.1.j9-adpt; -Xjit:count=1;4;0;66525296;939171467;4212435565
+als;15.0.1.j9-adpt; -Xjit:count=10;4;0;58614796;851543960;3958781674
+als;15.0.1.j9-adpt; -Xjit:count=100;4;0;57203199;823126812;3795249866
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;106878819;1472619369;6774120354
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;72117057;1015861110;4628864798
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;98963477;1453559517;7495073525
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;225236765;3082726727;14680927382
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;268341041;3671742899;17678068514
+als;15.0.1-open;default;4;0;47318601;679709691;2991601106
+als;15.0.1-open; -XX:-TieredCompilation;4;0;53219064;757593929;3257627708
+als;15.0.1-open; -XX:TieredStopAtLevel=1;4;50;14945255;202218372;812529963
+als;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;47308786;683675864;2990794651
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;47837341;687002956;3013693762
+dotty;20.2.0.r11-grl;default;4;0;40363954;578878515;2290220822
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;42899136;617353363;2703088112
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;74460545;1018208437;3474947037
+dotty;15.0.1.j9-adpt;default;4;0;59836573;847258873;3562573156
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;4;0;78365100;1082316905;4669910409
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;4;0;59301023;841173390;3570645645
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;4;0;58500803;825828256;3492370759
+dotty;15.0.1.j9-adpt; -Xjit:count=0;4;0;107182396;1443261348;4920101846
+dotty;15.0.1.j9-adpt; -Xjit:count=1;4;0;64778221;898545163;3269142143
+dotty;15.0.1.j9-adpt; -Xjit:count=10;4;0;55240611;823175358;3786781809
+dotty;15.0.1.j9-adpt; -Xjit:count=100;4;0;51704319;758088974;3411341609
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;95064011;1296891021;4658298378
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;72490947;1028982711;4356636674
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;165274236;2610393558;12747458028
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;303526873;4139505607;18099939381
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;349581485;4770062701;20699157581
+dotty;15.0.1-open;default;4;0;40073113;580459799;2507347829
+dotty;15.0.1-open; -XX:-TieredCompilation;4;0;58844973;798120751;3114164879
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;74580335;1005457784;3332429641
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;40266533;580869504;2534278608
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;39761016;571084205;2493351283
+neo4j;20.2.0.r11-grl;default;4;0;56957682;877996329;3401239767
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;81501784;1221632570;4945764865
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;177151659;2512014236;9917389040
+neo4j;15.0.1.j9-adpt;default;4;0;72504713;1071916057;4152905689
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;4;0;85199447;1247256688;4880239093
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;4;0;78387395;1153563421;4484995843
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;4;0;78713240;1165309094;4484944024
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;4;0;200909141;2806470585;10541916250
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;4;0;128485594;1839085904;7319133240
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;4;0;85319616;1263250345;5117584128
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;4;0;81279035;1213329077;4730521032
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;128794379;1835678854;7146378251
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;90403510;1339150722;5256539583
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;130108120;1940847458;8735597814
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;332037572;4595749740;20393895058
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;486633404;6679544363;29862664091
+neo4j;15.0.1-open;default;4;0;81716835;1238736654;4938594231
+neo4j;15.0.1-open; -XX:-TieredCompilation;4;0;65149760;982673590;3738931835
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;142179255;2047044069;8075603106
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;79349610;1197490424;4745682553
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;80278392;1210345377;4818514094
+reactors;20.2.0.r11-grl;default;4;0;385325322;5638213174;23123246591
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;415692512;6056485263;24805097692
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;489775719;7086970909;29044027209
+reactors;15.0.1.j9-adpt;default;4;0;224012947;3360369569;12928922775
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;4;0;215219306;3207026849;12265901949
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;4;0;223386097;3343926323;12848749883
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;4;0;218693654;3273002376;12398375731
+reactors;15.0.1.j9-adpt; -Xjit:count=0;4;0;324152758;4705569375;18132150420
+reactors;15.0.1.j9-adpt; -Xjit:count=1;4;0;258420246;3772854602;14437937098
+reactors;15.0.1.j9-adpt; -Xjit:count=10;4;0;227708449;3402180384;12971697444
+reactors;15.0.1.j9-adpt; -Xjit:count=100;4;0;215724623;3240127771;12473539845
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;368531655;5285215597;20363412287
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;247209957;3661018793;13746884669
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;631290942;8908834534;36257113298
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;669600309;9427771260;38852194727
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;695486123;9834308463;41089185827
+reactors;15.0.1-open;default;4;0;212610590;3208366289;11855785811
+reactors;15.0.1-open; -XX:-TieredCompilation;4;0;200884149;3027990181;11239998447
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;414396333;6063337047;22347772073
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;211057396;3175733959;11836985750
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;214554268;3223215611;11956030367
+scrabble;20.2.0.r11-grl;default;4;0;6281064;111730131;448531445
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;6887659;124841100;508676860
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;8205661;143013751;649393844
+scrabble;15.0.1.j9-adpt;default;4;0;11138567;172806646;722153852
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;4;0;14098172;219995548;969991963
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;4;0;12611751;193876902;810931029
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;4;0;11901842;183374217;753055078
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;4;0;26105177;389894383;1557664470
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;4;0;13135081;210367396;937382610
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;4;0;12464630;199551198;861300713
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;4;0;11205456;174148593;738645264
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;12235299;189967615;825245325
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;13665821;211550867;914504129
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;14379667;222680239;1061529448
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;54158956;896370421;5582302970
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;54223293;904619875;5586317974
+scrabble;15.0.1-open;default;4;0;7120628;127516167;526783319
+scrabble;15.0.1-open; -XX:-TieredCompilation;4;0;7565377;136585549;574441767
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;8548029;146588061;715512633
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;6923768;124523350;508184552
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;7335849;138603939;569602424
+fj-kmeans;20.2.0.r11-grl;default;4;0;12041708;250910530;953345521
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;4;0;12093076;246245207;939789708
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;4;0;15312297;313684593;1304586931
+fj-kmeans;15.0.1.j9-adpt;default;4;0;16226846;298803292;1262746340
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;4;0;16686473;307146933;1333112859
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;4;0;16031787;294813727;1232420368
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;4;0;15539830;291651722;1255766561
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;4;0;30294701;498397010;2266584713
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;4;0;19956093;355945703;1795430158
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;4;0;16523978;302965873;1335467895
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;4;0;15505353;290718391;1239617555
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;4;0;20232908;363112972;1741819211
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;4;0;15449510;288338659;1237206793
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;4;0;17312575;319765226;1432445734
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;4;0;29794762;492028523;2225032695
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;4;0;33698720;547214001;2530943288
+fj-kmeans;15.0.1-open;default;4;0;11463910;241983745;922763629
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;4;0;11486286;239787200;905210267
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;4;0;14309327;291571656;1250209506
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;4;0;11640443;248467394;949847117
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;4;0;11502304;242025315;923317277
+avrora;20.2.0.r11-grl;default;5;0;69869888;927262513;3685662074
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;73995778;983076882;4091441613
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;72315125;960724241;4011650253
+avrora;15.0.1.j9-adpt;default;5;0;31741577;436660134;2107986181
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;5;0;32180151;441272487;2155451575
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;5;0;32995229;454469349;2200241254
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;5;0;32085011;440183541;2130950111
+avrora;15.0.1.j9-adpt; -Xjit:count=0;5;0;38794761;522585943;2382428166
+avrora;15.0.1.j9-adpt; -Xjit:count=1;5;0;32022552;439597304;2161161520
+avrora;15.0.1.j9-adpt; -Xjit:count=10;5;0;30852367;424417043;2077562919
+avrora;15.0.1.j9-adpt; -Xjit:count=100;5;0;33119181;461495323;2236841808
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;30755200;419893658;2046852304
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;32500971;444327346;2148498954
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;33675824;465824581;2306359819
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;48963991;669730068;3473405659
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;48615090;665571022;3439651229
+avrora;15.0.1-open;default;5;0;73799764;981647357;4087718723
+avrora;15.0.1-open; -XX:-TieredCompilation;5;0;69999085;930421473;3799693093
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;69424031;922191267;3804534023
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;70590612;940491567;3803677275
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;70430438;935442353;3881481274
+h2;20.2.0.r11-grl;default;5;0;41207151;566948217;2056022568
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;32729729;444478280;1656201082
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;53479600;719187685;2471667866
+h2;15.0.1.j9-adpt;default;5;0;42758035;585539568;2221115835
+h2;15.0.1.j9-adpt; -XcompilationThreads1;5;0;47635423;649933947;2592625138
+h2;15.0.1.j9-adpt; -XcompilationThreads3;5;0;46775343;643105313;2454098210
+h2;15.0.1.j9-adpt; -XcompilationThreads7;5;0;48624156;666754722;2457696651
+h2;15.0.1.j9-adpt; -Xjit:count=0;5;0;71304587;956213173;3324235387
+h2;15.0.1.j9-adpt; -Xjit:count=1;5;0;53643760;728316030;2627484424
+h2;15.0.1.j9-adpt; -Xjit:count=10;5;0;49282176;685955793;2741226930
+h2;15.0.1.j9-adpt; -Xjit:count=100;5;0;48375671;666284691;2720783379
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;61243366;831549171;2893679603
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;50799796;690255660;2483347036
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;63171515;891025518;3822079755
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;124080486;1688970534;7286577904
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;135997077;1847642459;7899199626
+h2;15.0.1-open;default;5;0;35720330;486791669;1810379398
+h2;15.0.1-open; -XX:-TieredCompilation;5;0;37005466;501668180;1847949126
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;53588290;714194315;2471584432
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;33566727;458146917;1679572910
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;33253740;452375146;1703235630
+pmd;20.2.0.r11-grl;default;5;0;5261977;72698685;303835099
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;5453198;81727352;350846331
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;5226832;67898753;269581890
+pmd;15.0.1.j9-adpt;default;5;0;5152611;64859255;288037043
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;5;0;5745282;73672299;348339135
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;5;0;5170508;65589447;294414468
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;5;0;5328263;67121376;285534242
+pmd;15.0.1.j9-adpt; -Xjit:count=0;5;0;16367136;211770299;760432990
+pmd;15.0.1.j9-adpt; -Xjit:count=1;5;0;4693127;57723870;271108681
+pmd;15.0.1.j9-adpt; -Xjit:count=10;5;0;4818783;61654640;295411170
+pmd;15.0.1.j9-adpt; -Xjit:count=100;5;0;4606731;57154573;260046454
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;5389416;67764848;277211449
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;6369400;83794734;412118514
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;11281860;159552500;875986710
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;12447508;165392251;804862868
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;12524168;166666097;809674930
+pmd;15.0.1-open;default;5;0;5015108;77243137;327187578
+pmd;15.0.1-open; -XX:-TieredCompilation;5;0;12006815;180663808;933062185
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;4526236;55561782;215018064
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;5134144;77745619;327458085
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;5093799;77002191;323569057
+sunflow;20.2.0.r11-grl;default;5;0;4401042;65386814;293307110
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;5396039;81703377;386144092
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;5206870;80021464;381164308
+sunflow;15.0.1.j9-adpt;default;5;0;6207029;92754200;442495327
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;5;0;8417963;124333369;650662152
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;5;0;6290241;92430315;445262105
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;5;0;6747379;100455424;487172581
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;5;0;17969128;244160232;917443025
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;5;0;6881901;101315315;506097215
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;5;0;7231028;107634597;541882890
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;5;0;9049468;138507060;681440333
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;5495547;77311695;389869852
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;5072829;70208105;335746883
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;6596669;100185027;531131698
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;21430378;296458630;2159568508
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;17494487;243962492;1709939654
+sunflow;15.0.1-open;default;5;0;4374745;64257844;301759359
+sunflow;15.0.1-open; -XX:-TieredCompilation;5;0;5353270;79842652;373189292
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;4039311;55865044;268462387
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;4692403;72425778;332843265
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;4586606;69219755;321902253
+als;20.2.0.r11-grl;default;5;0;45730694;664364112;2860439393
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;48508688;698118285;3103209342
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;71483021;1005939305;4502416270
+als;15.0.1.j9-adpt;default;5;0;58518610;834071483;3753903353
+als;15.0.1.j9-adpt; -XcompilationThreads1;5;0;65885763;926481417;4167859692
+als;15.0.1.j9-adpt; -XcompilationThreads3;5;0;60739369;860343388;3868747482
+als;15.0.1.j9-adpt; -XcompilationThreads7;5;0;60715061;859720555;3854547201
+als;15.0.1.j9-adpt; -Xjit:count=0;5;0;146229914;1998097119;8475419832
+als;15.0.1.j9-adpt; -Xjit:count=1;5;0;69287584;977024431;4403064778
+als;15.0.1.j9-adpt; -Xjit:count=10;5;0;59193598;855063358;4002375069
+als;15.0.1.j9-adpt; -Xjit:count=100;5;0;58957426;844562402;3908063787
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;107284473;1480792262;6836995681
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;68437233;962190134;4443047707
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;100174063;1470745150;7560914055
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;234001808;3211376425;15284260189
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;266286336;3648905033;17646158927
+als;15.0.1-open;default;5;0;47152906;679350218;3013677282
+als;15.0.1-open; -XX:-TieredCompilation;5;0;54041759;761752468;3252202613
+als;15.0.1-open; -XX:TieredStopAtLevel=1;5;50;15351371;209226980;813083918
+als;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;47990037;685479581;2995444541
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;47963317;688896530;2984536244
+dotty;20.2.0.r11-grl;default;5;0;39193059;562640654;2288096742
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;42428231;614541085;2685793112
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;75115756;1025393790;3426998857
+dotty;15.0.1.j9-adpt;default;5;0;58402232;833605965;3531716850
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;5;0;79142284;1101431929;4734460597
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;5;0;60789232;865907860;3639750753
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;5;0;58077952;823443185;3497346149
+dotty;15.0.1.j9-adpt; -Xjit:count=0;5;0;107329090;1452675912;4865021298
+dotty;15.0.1.j9-adpt; -Xjit:count=1;5;0;63249216;874578095;3192528935
+dotty;15.0.1.j9-adpt; -Xjit:count=10;5;0;55071605;818412667;3771964038
+dotty;15.0.1.j9-adpt; -Xjit:count=100;5;0;52612649;774124721;3511895673
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;96232378;1317926930;4743965089
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;69339059;992668054;4246158502
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;152567291;2430063182;11916980661
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;308621827;4198704351;18293733501
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;377577395;5145632000;22116043725
+dotty;15.0.1-open;default;5;0;40241052;580949430;2537106238
+dotty;15.0.1-open; -XX:-TieredCompilation;5;0;58505227;796342540;3071772104
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;73545901;993297588;3272811690
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;39427317;573485234;2512810278
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;40043006;580105421;2506505058
+neo4j;20.2.0.r11-grl;default;5;0;56015690;866130599;3254349457
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;83102640;1243627269;5015388161
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;154896111;2210217376;8856195773
+neo4j;15.0.1.j9-adpt;default;5;0;77498126;1143129846;4403625324
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;5;0;84320587;1235443007;4848970436
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;5;0;78574627;1155013202;4495282864
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;5;0;77606112;1159458388;4492598973
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;5;0;199231761;2777977486;10482169272
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;5;0;124722298;1791630153;7065482767
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;5;0;83521897;1251374240;5030833067
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;5;0;76068602;1139427215;4489189680
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;131891787;1890660917;7368361202
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;91271461;1339846857;5277157084
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;130563185;1948989170;8816117567
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;1;153175400;2067338219;8859905602
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;255;52849407;702659017;3076105834
+neo4j;15.0.1-open;default;5;0;78525950;1186810183;4657730324
+neo4j;15.0.1-open; -XX:-TieredCompilation;5;0;65320125;981998371;3744771724
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;150260239;2162362494;8503760090
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;79500106;1202627828;4761142902
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;80397418;1209873341;4805295316
+reactors;20.2.0.r11-grl;default;5;0;392354830;5731714902;23595775594
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;442279887;6457270814;26609753900
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;524771759;7565645179;31035600541
+reactors;15.0.1.j9-adpt;default;5;0;222525227;3341560239;12953756633
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;5;0;223449462;3318844085;12740517311
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;5;0;229675700;3421112865;13271707418
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;5;0;220787686;3275807388;12467489079
+reactors;15.0.1.j9-adpt; -Xjit:count=0;5;0;343325027;4986859846;19238569523
+reactors;15.0.1.j9-adpt; -Xjit:count=1;5;0;265906924;3906305010;15023775138
+reactors;15.0.1.j9-adpt; -Xjit:count=10;5;0;228792662;3392137938;12929302899
+reactors;15.0.1.j9-adpt; -Xjit:count=100;5;0;218519398;3270634335;12655670605
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;371046001;5310635967;20317120474
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;242806872;3611225739;13489770764
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;629211748;8905975240;36372649561
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;654481815;9209640584;37956323302
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;725897724;10237027489;43047674038
+reactors;15.0.1-open;default;5;0;212911318;3191295664;11800824892
+reactors;15.0.1-open; -XX:-TieredCompilation;5;0;189539602;2854977445;10808994729
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;405365486;5931995099;21951691301
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;207983418;3160219131;11738412271
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;193446385;2948614623;10897249813
+scrabble;20.2.0.r11-grl;default;5;0;6437893;114694353;454935541
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;6797254;122618667;492518698
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;8116342;143960776;653100500
+scrabble;15.0.1.j9-adpt;default;5;0;12279312;187909872;791181202
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;5;0;12950937;200454923;876688308
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;5;0;12282212;189960821;798029573
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;5;0;12589310;194225744;800155300
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;5;0;22077117;329551810;1333261723
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;5;0;14933979;245144464;1062550196
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;5;0;13250764;206029081;884480706
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;5;0;11733024;183440789;769503584
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;12596354;193206028;820438390
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;15594029;235756323;1043193618
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;13560799;216401042;1063389124
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;54098149;908868669;5548940567
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;52162984;894704113;5427069725
+scrabble;15.0.1-open;default;5;0;7365249;137452584;564309407
+scrabble;15.0.1-open; -XX:-TieredCompilation;5;0;8003361;144068074;628013590
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;8767033;161587767;763546568
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;7192049;131608442;533168496
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;7059386;127684391;519876112
+fj-kmeans;20.2.0.r11-grl;default;5;0;12062464;251106859;957582021
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;5;0;11851210;250796621;941327546
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;5;0;15223952;309588141;1293155320
+fj-kmeans;15.0.1.j9-adpt;default;5;0;16520389;302011335;1256516742
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;5;0;16262205;302133078;1289315425
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;5;0;16822376;308724517;1296427406
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;5;0;16566989;302209547;1276140592
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;5;0;30993087;502917242;2313928463
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;5;0;20455623;364831620;1846445347
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;5;0;15984621;300000656;1311314880
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;5;0;18540820;336579987;1607194189
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;5;0;18664412;341035301;1603362839
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;5;0;15651202;291404137;1245638290
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;5;0;17188931;319575920;1429967652
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;5;0;32128078;524358403;2385511471
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;5;0;30677724;513654446;2379650769
+fj-kmeans;15.0.1-open;default;5;0;11871347;248440895;958257618
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;5;0;11624038;241697420;914502969
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;5;0;14158391;292755494;1231913837
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;5;0;11530599;246106758;930515684
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;5;0;11501350;243636893;927432012
+avrora;20.2.0.r11-grl;default;6;0;72918884;970078630;4037879129
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;73878800;988564885;4095418654
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;71060500;945591836;3946766142
+avrora;15.0.1.j9-adpt;default;6;0;32833641;450715494;2188276076
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;6;0;32457973;442435348;2149935475
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;6;0;32869616;456656866;2200147200
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;6;0;30406210;415605925;2026046571
+avrora;15.0.1.j9-adpt; -Xjit:count=0;6;0;39418935;534619485;2455313905
+avrora;15.0.1.j9-adpt; -Xjit:count=1;6;0;31324228;429335397;2093329358
+avrora;15.0.1.j9-adpt; -Xjit:count=10;6;0;31136720;430703598;2104327559
+avrora;15.0.1.j9-adpt; -Xjit:count=100;6;0;32723242;454372118;2199846359
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;32709198;448012979;2186839129
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;31928050;436718748;2117074902
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;34939825;482900252;2370858921
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;47074990;643138422;3317499198
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;56062939;764742180;3992205539
+avrora;15.0.1-open;default;6;0;70618714;937977087;3920242406
+avrora;15.0.1-open; -XX:-TieredCompilation;6;0;74011538;982758122;4100880248
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;70284930;933583647;3905156445
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;71093182;947093210;3876678369
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;72364872;963999297;4010337634
+h2;20.2.0.r11-grl;default;6;0;39636690;540310855;1922407676
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;36376385;494932999;1823905731
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;55160019;745579328;2636345423
+h2;15.0.1.j9-adpt;default;6;0;49821497;681612567;2682494477
+h2;15.0.1.j9-adpt; -XcompilationThreads1;6;0;55168197;755545257;2857801461
+h2;15.0.1.j9-adpt; -XcompilationThreads3;6;0;47425878;650239275;2570603832
+h2;15.0.1.j9-adpt; -XcompilationThreads7;6;0;46532668;631011336;2338566401
+h2;15.0.1.j9-adpt; -Xjit:count=0;6;0;65000580;877976974;3149205378
+h2;15.0.1.j9-adpt; -Xjit:count=1;6;0;53609659;725106305;2602487846
+h2;15.0.1.j9-adpt; -Xjit:count=10;6;0;44265778;613940116;2550438112
+h2;15.0.1.j9-adpt; -Xjit:count=100;6;0;45623040;626003233;2433823238
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;60478784;816481639;2843333053
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;50363639;683393641;2493286220
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;61696534;875462144;3833134779
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;121512228;1646459561;7128944641
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;128056944;1732499493;7535533077
+h2;15.0.1-open;default;6;0;35004133;475825059;1733617572
+h2;15.0.1-open; -XX:-TieredCompilation;6;0;37080861;501350997;1783627819
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;54855225;731501568;2539651396
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;34075857;467648142;1727958528
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;35654665;481216809;1737007516
+pmd;20.2.0.r11-grl;default;6;0;5121490;72026021;296034826
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;5409674;81985157;351527298
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;5236463;68298910;270869485
+pmd;15.0.1.j9-adpt;default;6;0;5187007;67784630;287262754
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;6;0;5827554;74795059;346707791
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;6;0;5317770;68884486;306154062
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;6;0;5045652;64402320;274241608
+pmd;15.0.1.j9-adpt; -Xjit:count=0;6;0;15916236;208168940;748149330
+pmd;15.0.1.j9-adpt; -Xjit:count=1;6;0;4662636;58764041;271867712
+pmd;15.0.1.j9-adpt; -Xjit:count=10;6;0;4795281;63149174;299128690
+pmd;15.0.1.j9-adpt; -Xjit:count=100;6;0;4617164;58019253;259246529
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;5372855;68034877;284236393
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;6280585;83088471;409148489
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;10762274;155722468;841134505
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;13158802;175494321;861230400
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;11686108;159340533;776189358
+pmd;15.0.1-open;default;6;0;5123536;79290643;328316909
+pmd;15.0.1-open; -XX:-TieredCompilation;6;0;11886505;179523820;934701648
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;4621168;56790050;218872060
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;5210042;79660980;332499576
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;5262120;78613144;329878916
+sunflow;20.2.0.r11-grl;default;6;0;4937749;73783960;337054191
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;5344953;81948040;380560183
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;5604105;86147047;416997651
+sunflow;15.0.1.j9-adpt;default;6;0;6958710;103768166;505313159
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;6;0;8953029;134859372;688073190
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;6;0;6760937;101783311;485691200
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;6;0;6269114;97249645;466786341
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;6;0;17977743;244403256;918596525
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;6;0;7192703;110829238;559875276
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;6;0;8339529;124534717;618208867
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;6;0;8358553;128258692;646640130
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;5689748;80664905;401756052
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;4952337;68885482;332919009
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;6562829;97720809;514232571
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;16093954;223951516;1553395315
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;17663312;242385508;1716553040
+sunflow;15.0.1-open;default;6;0;4727574;72374157;333531984
+sunflow;15.0.1-open; -XX:-TieredCompilation;6;0;5499168;85061038;400891918
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;4552274;66875581;320486363
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;4405392;64997123;304503981
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;4610476;70023786;330116586
+als;20.2.0.r11-grl;default;6;0;44312723;644302920;2802880459
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;47937823;690041061;3074531741
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;70930966;1002259579;4481584657
+als;15.0.1.j9-adpt;default;6;0;59070024;832477407;3743025086
+als;15.0.1.j9-adpt; -XcompilationThreads1;6;0;63928148;906214991;4071503065
+als;15.0.1.j9-adpt; -XcompilationThreads3;6;0;61526309;873222040;3913071098
+als;15.0.1.j9-adpt; -XcompilationThreads7;6;0;59870607;855386723;3851521573
+als;15.0.1.j9-adpt; -Xjit:count=0;6;0;142052429;1941501395;8248442812
+als;15.0.1.j9-adpt; -Xjit:count=1;6;0;68221819;961312265;4323885476
+als;15.0.1.j9-adpt; -Xjit:count=10;6;0;57795697;833065691;3922784086
+als;15.0.1.j9-adpt; -Xjit:count=100;6;0;58199981;837479726;3877725912
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;105563695;1456322850;6764496355
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;70603425;994405508;4574506843
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;100623885;1476394293;7626776556
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;227503276;3115346495;14901475523
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;279072114;3807198726;18322804108
+als;15.0.1-open;default;6;0;47362593;680541506;2995047812
+als;15.0.1-open; -XX:-TieredCompilation;6;0;53578160;759182909;3267313962
+als;15.0.1-open; -XX:TieredStopAtLevel=1;6;50;14765369;200228667;791974352
+als;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;47560664;684518251;2996941241
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;47554830;685239983;3020886188
+dotty;20.2.0.r11-grl;default;6;0;39206433;562313557;2267104182
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;42422120;610965169;2683079314
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;74518158;1017836065;3506768184
+dotty;15.0.1.j9-adpt;default;6;0;58755847;835901209;3578962762
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;6;0;81582384;1134491465;4851381318
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;6;0;58145043;814948442;3484339958
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;6;0;59768215;853069156;3602004817
+dotty;15.0.1.j9-adpt; -Xjit:count=0;6;0;106972579;1446694085;4885978581
+dotty;15.0.1.j9-adpt; -Xjit:count=1;6;0;61729122;856607481;3158224032
+dotty;15.0.1.j9-adpt; -Xjit:count=10;6;0;55412292;826367565;3772923264
+dotty;15.0.1.j9-adpt; -Xjit:count=100;6;0;52098197;767986989;3479075506
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;97387293;1345868310;4943684611
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;69778173;995124560;4280900113
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;152943315;2432332876;12124544706
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;314225427;4284406474;18705046597
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;365796595;4984545766;21670084722
+dotty;15.0.1-open;default;6;0;39939468;573917321;2522541028
+dotty;15.0.1-open; -XX:-TieredCompilation;6;0;59593631;808628654;3108556618
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;73835852;997663779;3302557647
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;39425288;568978451;2494153466
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;39839635;572934847;2498749463
+neo4j;20.2.0.r11-grl;default;6;0;53703718;836542801;3216534551
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;85804913;1281708401;5201878407
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;174545757;2482513250;9803516773
+neo4j;15.0.1.j9-adpt;default;6;0;77123564;1142077037;4426671590
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;6;0;80445285;1175442666;4587061316
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;6;0;77568702;1154627749;4473927207
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;6;0;77339388;1143532205;4425161462
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;6;0;200603454;2804986669;10627191178
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;6;0;131330451;1884089951;7436991093
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;6;0;82086996;1218229191;4867985524
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;6;0;77288771;1152074180;4543148220
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;131948779;1893936616;7405218775
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;92310035;1369284563;5368545033
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;138120685;2074354248;9358533232
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;349059196;4833891915;21450285236
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;487494758;6698348537;30073129433
+neo4j;15.0.1-open;default;6;0;80783415;1219212783;4822730818
+neo4j;15.0.1-open; -XX:-TieredCompilation;6;0;65949492;1004775664;3857072707
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;142291121;2052704625;8054343699
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;81193751;1225148433;4821290209
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;78693937;1181880171;4719471255
+reactors;20.2.0.r11-grl;default;6;0;393606991;5747566390;23782655546
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;412105107;6017171853;24923240273
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;527498509;7623589767;31358246016
+reactors;15.0.1.j9-adpt;default;6;0;218879157;3276486079;12357018414
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;6;0;222321092;3316552558;12761951704
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;6;0;217785892;3250457444;12380543501
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;6;0;221387681;3323013608;12863104644
+reactors;15.0.1.j9-adpt; -Xjit:count=0;6;0;330487358;4790371692;18332246526
+reactors;15.0.1.j9-adpt; -Xjit:count=1;6;0;261266100;3804655682;14502197310
+reactors;15.0.1.j9-adpt; -Xjit:count=10;6;0;220685082;3305433496;12547239546
+reactors;15.0.1.j9-adpt; -Xjit:count=100;6;0;212221559;3207406718;12093346788
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;373704656;5362315541;20595749216
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;253008472;3741349010;14168597456
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;610687939;8628898636;35393677153
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;654360108;9236782461;38056992784
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;692657064;9796256092;40643599260
+reactors;15.0.1-open;default;6;0;211471485;3193147393;11807278733
+reactors;15.0.1-open; -XX:-TieredCompilation;6;0;202671166;3059954666;11530629173
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;414813666;6103034059;22597013502
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;212951317;3195199995;11843285171
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;198686981;3026201642;11186507006
+scrabble;20.2.0.r11-grl;default;6;0;6292636;111806556;447131241
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;6870397;126574819;513842130
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;8174798;144172482;647869130
+scrabble;15.0.1.j9-adpt;default;6;0;12674077;194929175;807786140
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;6;0;14136486;222486679;986711220
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;6;0;11954209;182151764;764035031
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;6;0;12487845;189220960;779847490
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;6;0;25037275;373614326;1514579314
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;6;0;14230789;226910598;1025242736
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;6;0;13620211;209026948;878291574
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;6;0;12439723;191193329;794651896
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;14631933;229116306;998767645
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;14100032;218542385;922825518
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;17030673;270055893;1298089877
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;55490063;937620613;5664316982
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;55071651;919790406;5539969094
+scrabble;15.0.1-open;default;6;0;6960424;123479216;512528107
+scrabble;15.0.1-open; -XX:-TieredCompilation;6;0;7639880;135668266;573054746
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;8637603;148015933;716262876
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;7308983;132941669;541460102
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;7180986;129244745;526252132
+fj-kmeans;20.2.0.r11-grl;default;6;0;11862887;248781504;942373015
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;6;0;11998091;247629552;941141757
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;6;0;15260697;311761949;1303241598
+fj-kmeans;15.0.1.j9-adpt;default;6;0;16179048;298521896;1238683475
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;6;0;16731641;306703906;1288605099
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;6;0;16260377;296574802;1243800589
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;6;0;16410708;301321826;1286931641
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;6;0;30656785;500439116;2285436654
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;6;0;20537290;367738255;1843891582
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;6;0;16073610;300328229;1306623668
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;6;0;16823389;307362940;1325028102
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;6;0;20159419;359660849;1739987184
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;6;0;16287146;302250597;1273684972
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;6;0;17628071;325314781;1468257227
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;6;0;32611669;535057371;2398160243
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;6;0;34446476;564172736;2621130802
+fj-kmeans;15.0.1-open;default;6;0;11643291;243368441;930254332
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;6;0;11743761;243515673;935269822
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;6;0;14668368;295854033;1264647886
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;6;0;11528189;242084189;923858597
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;6;0;11667452;247503571;948044814
+avrora;20.2.0.r11-grl;default;7;0;71052227;946262176;3911457699
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;72138346;961297577;3994231291
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;71256900;948029142;3987241075
+avrora;15.0.1.j9-adpt;default;7;0;31658033;434194002;2101599723
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;7;0;31712455;436571164;2116386123
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;7;0;30814055;422536382;2041472252
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;7;0;30508099;416046994;2017711510
+avrora;15.0.1.j9-adpt; -Xjit:count=0;7;0;39979127;539777956;2473201677
+avrora;15.0.1.j9-adpt; -Xjit:count=1;7;0;31409605;435939870;2127742111
+avrora;15.0.1.j9-adpt; -Xjit:count=10;7;0;32372958;443386717;2177141156
+avrora;15.0.1.j9-adpt; -Xjit:count=100;7;0;31472008;433575286;2100700678
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;31877099;435143016;2122459227
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;31017379;424385357;2059259010
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;32939846;454468155;2254785976
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;48450321;663330476;3419176489
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;49993038;684303241;3565311613
+avrora;15.0.1-open;default;7;0;71424109;955045814;3915674607
+avrora;15.0.1-open; -XX:-TieredCompilation;7;0;68052607;903637768;3595698681
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;69675174;924989546;3829976707
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;73709765;982247331;4084350995
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;71953113;960848921;3990471351
+h2;20.2.0.r11-grl;default;7;0;41656533;575376880;2064494104
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;34955234;475460230;1769723558
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;55298644;745508779;2600207515
+h2;15.0.1.j9-adpt;default;7;0;49402245;679374820;2665243238
+h2;15.0.1.j9-adpt; -XcompilationThreads1;7;0;50873317;692876948;2650392385
+h2;15.0.1.j9-adpt; -XcompilationThreads3;7;0;43738122;599820344;2391165693
+h2;15.0.1.j9-adpt; -XcompilationThreads7;7;0;46672228;636709377;2366903974
+h2;15.0.1.j9-adpt; -Xjit:count=0;7;0;70323168;944255381;3223316332
+h2;15.0.1.j9-adpt; -Xjit:count=1;7;0;44414881;605240934;2289871335
+h2;15.0.1.j9-adpt; -Xjit:count=10;7;0;49438292;682099122;2671285642
+h2;15.0.1.j9-adpt; -Xjit:count=100;7;0;45779672;628395955;2415590678
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;61549785;832901493;2874327846
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;51253266;700064383;2659411100
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;62821086;883836508;3815582823
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;124284205;1692380536;7292568917
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;138310705;1884634553;8141333711
+h2;15.0.1-open;default;7;0;34260096;465645784;1712229259
+h2;15.0.1-open; -XX:-TieredCompilation;7;0;35284329;474951153;1713331368
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;54280476;731592680;2587616362
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;34444534;463198121;1712883860
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;31532073;427800499;1585475006
+pmd;20.2.0.r11-grl;default;7;0;5124486;74039805;309913268
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;5122292;79320631;336958671
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;4799673;65989206;267058887
+pmd;15.0.1.j9-adpt;default;7;0;4893787;64768021;276259060
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;7;0;5513206;75652273;348941855
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;7;0;5059092;67089061;288919304
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;7;0;4848441;62034340;259660041
+pmd;15.0.1.j9-adpt; -Xjit:count=0;7;0;15828958;206782606;741239924
+pmd;15.0.1.j9-adpt; -Xjit:count=1;7;0;4492121;57878155;270304056
+pmd;15.0.1.j9-adpt; -Xjit:count=10;7;0;4623869;60667774;293413922
+pmd;15.0.1.j9-adpt; -Xjit:count=100;7;0;4339112;57011517;263579953
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;5179472;66354845;271335487
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;5880128;82517444;410057788
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;10980125;158533000;848681788
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;11527352;154780860;752013761
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;12108955;161655991;787602415
+pmd;15.0.1-open;default;7;0;4947265;75133188;312931207
+pmd;15.0.1-open; -XX:-TieredCompilation;7;0;11842545;180606479;935935775
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;4428193;56284737;216687983
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;7776080;97943990;397198569
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;5024624;77202836;323825526
+sunflow;20.2.0.r11-grl;default;7;0;5019420;79773451;369670868
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;4472734;67792372;313975820
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;5090191;80019322;382366086
+sunflow;15.0.1.j9-adpt;default;7;0;6326226;96534983;468983053
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;7;0;8773395;136201073;698258711
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;7;0;6578026;99643851;482323167
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;7;0;6654325;101449083;481977525
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;7;0;17407029;239906662;895826808
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;7;0;6185359;93006098;464510896
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;7;0;7835979;117872898;602539656
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;7;0;8350228;132824624;659705281
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;5245239;74395455;379147223
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;4970867;70784946;336530998
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;6849045;101339886;544390086
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;17965569;252310341;1778846949
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;20047461;281564813;2012751439
+sunflow;15.0.1-open;default;7;0;4145942;63155953;291398546
+sunflow;15.0.1-open; -XX:-TieredCompilation;7;0;5704114;88417950;428188052
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;3789743;54163590;262436279
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;4770579;74785879;352497877
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;4444855;67971597;315534104
+als;20.2.0.r11-grl;default;7;0;46436124;675853327;2918873570
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;47927723;689269360;3087491547
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;71221614;1006230754;4495662076
+als;15.0.1.j9-adpt;default;7;0;59886202;859000185;3846551797
+als;15.0.1.j9-adpt; -XcompilationThreads1;7;0;64017623;905521335;4082715928
+als;15.0.1.j9-adpt; -XcompilationThreads3;7;0;60386540;861397405;3870559977
+als;15.0.1.j9-adpt; -XcompilationThreads7;7;0;59308687;843627649;3783696979
+als;15.0.1.j9-adpt; -Xjit:count=0;7;0;147876392;2022444683;8585760979
+als;15.0.1.j9-adpt; -Xjit:count=1;7;0;68338492;964468304;4333281753
+als;15.0.1.j9-adpt; -Xjit:count=10;7;0;58341296;844509633;3902712788
+als;15.0.1.j9-adpt; -Xjit:count=100;7;0;57198353;824495396;3837978944
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;106369438;1470247395;6811643817
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;70641326;994963376;4582184803
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;100639442;1478278213;7698598088
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;236374582;3233763768;15493347116
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;276695797;3788904699;18249805759
+als;15.0.1-open;default;7;0;46992720;675281290;2996484456
+als;15.0.1-open; -XX:-TieredCompilation;7;0;53535945;763131976;3280315455
+als;15.0.1-open; -XX:TieredStopAtLevel=1;7;50;15273980;207725607;818522928
+als;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;47067993;675103199;2936529408
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;46297259;663139133;2948393880
+dotty;20.2.0.r11-grl;default;7;0;39819528;572440014;2283786207
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;42924141;619333764;2708715540
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;75200742;1025189963;3476795481
+dotty;15.0.1.j9-adpt;default;7;0;57375307;807957657;3427977369
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;7;0;79903296;1111937552;4761067768
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;7;0;60127928;853168330;3666241591
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;7;0;58314178;832583375;3503564578
+dotty;15.0.1.j9-adpt; -Xjit:count=0;7;0;107672568;1454694608;4887055299
+dotty;15.0.1.j9-adpt; -Xjit:count=1;7;0;61336602;847687580;3142464124
+dotty;15.0.1.j9-adpt; -Xjit:count=10;7;0;53972055;804115185;3762055127
+dotty;15.0.1.j9-adpt; -Xjit:count=100;7;0;51863921;763184380;3469216704
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;96915277;1333314476;4902253014
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;69645733;987764879;4251454143
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;178588862;2820645958;13564336247
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;302244657;4124604645;17928311525
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;382847477;5207889399;22630744067
+dotty;15.0.1-open;default;7;0;39699712;569535294;2492226530
+dotty;15.0.1-open; -XX:-TieredCompilation;7;0;59978629;814271829;3114313866
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;73329385;993443887;3297849040
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;38785205;558590760;2443271089
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;39680421;571618343;2501759952
+neo4j;20.2.0.r11-grl;default;7;0;58777614;907714177;3495071192
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;84573286;1264951980;5172324589
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;169222120;2400655068;9501579862
+neo4j;15.0.1.j9-adpt;default;7;0;73542073;1090964863;4232337554
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;7;0;86886358;1263175757;5001774365
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;7;0;75456888;1118426528;4344267137
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;7;0;77206181;1139274858;4383621468
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;7;0;202739119;2836378045;10736836710
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;7;0;124659688;1784427035;7032937684
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;7;0;83040369;1233413371;4963035085
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;7;0;76883379;1139894982;4505647889
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;128930587;1848329030;7230109725
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;95011084;1402097754;5508649044
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;133266287;1999588120;8992533864
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;339580009;4681820242;20799531593
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;492881418;6752244976;30413827598
+neo4j;15.0.1-open;default;7;0;79727720;1203489845;4769974117
+neo4j;15.0.1-open; -XX:-TieredCompilation;7;0;67211711;1018497760;3867005298
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;147793589;2120509100;8334626186
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;77930165;1175454064;4696255923
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;79757943;1205318669;4768162781
+reactors;20.2.0.r11-grl;default;7;0;392543526;5757961548;23524252095
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;404100397;5876304354;24242450695
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;497554909;7164924669;29262268533
+reactors;15.0.1.j9-adpt;default;7;0;225063391;3347866394;12767926910
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;7;0;218883624;3245073191;12427751144
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;7;0;210257130;3147525685;12031015343
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;7;0;220213715;3294236529;12808865770
+reactors;15.0.1.j9-adpt; -Xjit:count=0;7;0;322375762;4667921370;17927475529
+reactors;15.0.1.j9-adpt; -Xjit:count=1;7;0;264305976;3854808715;14659485238
+reactors;15.0.1.j9-adpt; -Xjit:count=10;7;0;229287206;3413665421;13051479528
+reactors;15.0.1.j9-adpt; -Xjit:count=100;7;0;219208333;3296262462;12676581317
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;364897479;5239474137;20264014957
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;245127442;3634321945;13613705505
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;625739353;8850839533;36271387553
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;662386779;9345535305;38638899497
+reactors;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;678534426;9590418399;40196138430
+reactors;15.0.1-open;default;7;0;212502094;3176299859;11820301954
+reactors;15.0.1-open; -XX:-TieredCompilation;7;0;198672493;3006845597;11262781898
+reactors;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;413134371;6027864746;22395529886
+reactors;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;213497331;3206944244;11947532585
+reactors;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;209987413;3160851985;11793015708
+scrabble;20.2.0.r11-grl;default;7;0;6576370;119200663;475338810
+scrabble;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;6680445;123513075;500706360
+scrabble;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;7996468;141650704;650796064
+scrabble;15.0.1.j9-adpt;default;7;0;11183134;170983605;701404272
+scrabble;15.0.1.j9-adpt; -XcompilationThreads1;7;0;13303883;209582170;917446565
+scrabble;15.0.1.j9-adpt; -XcompilationThreads3;7;0;12383799;191278503;819213723
+scrabble;15.0.1.j9-adpt; -XcompilationThreads7;7;0;12863899;195655359;805005752
+scrabble;15.0.1.j9-adpt; -Xjit:count=0;7;0;23946331;362286557;1455195921
+scrabble;15.0.1.j9-adpt; -Xjit:count=1;7;0;12788482;202609745;909457815
+scrabble;15.0.1.j9-adpt; -Xjit:count=10;7;0;11689839;182164722;788787166
+scrabble;15.0.1.j9-adpt; -Xjit:count=100;7;0;10655427;167263930;722640606
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;13518685;210411062;933717581
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;12253770;191717186;816001634
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;15777817;247769240;1188985664
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;53720946;900668787;5473731043
+scrabble;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;53902827;918522909;5592236355
+scrabble;15.0.1-open;default;7;0;6971861;127447042;532100079
+scrabble;15.0.1-open; -XX:-TieredCompilation;7;0;7589827;139870289;594457218
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;8634479;152391183;740637020
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;6840460;122674436;507250715
+scrabble;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;6872786;126185786;514013394
+fj-kmeans;20.2.0.r11-grl;default;7;0;11783563;247851875;948305129
+fj-kmeans;20.2.0.r11-grl; -XX:-UseJVMCICompiler;7;0;11645937;243397310;918511442
+fj-kmeans;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;7;0;15021237;310985045;1294425825
+fj-kmeans;15.0.1.j9-adpt;default;7;0;16398198;302940383;1281019487
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads1;7;0;16667237;310090271;1342718974
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads3;7;0;15695955;292946041;1258033644
+fj-kmeans;15.0.1.j9-adpt; -XcompilationThreads7;7;0;15685673;290677540;1231313254
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=0;7;0;30586649;499506888;2274741491
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=1;7;0;20440347;365048560;1850987083
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=10;7;0;16833561;311544323;1343844094
+fj-kmeans;15.0.1.j9-adpt; -Xjit:count=100;7;0;18018790;329266986;1554192249
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=cold;7;0;18616024;340658876;1594083322
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=warm;7;0;16016395;297642238;1263903991
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=hot;7;0;17129081;316382718;1410881703
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;7;0;31962514;524607701;2356873970
+fj-kmeans;15.0.1.j9-adpt; -Xjit:optlevel=scorching;7;0;34422578;565690756;2605291426
+fj-kmeans;15.0.1-open;default;7;0;11307131;240419197;913214703
+fj-kmeans;15.0.1-open; -XX:-TieredCompilation;7;0;11283775;239193867;904285527
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=1;7;0;14340531;291981956;1255767903
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=4;7;0;11485055;241578111;923510087
+fj-kmeans;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;7;0;11206931;240408533;912478011
+avrora;20.2.0.r11-grl;default;8;0;70809238;944046828;3882522410
+avrora;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;73305468;975011059;4047948256
+avrora;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;67381272;898781456;3721825616
+avrora;15.0.1.j9-adpt;default;8;0;31847266;439751407;2138208394
+avrora;15.0.1.j9-adpt; -XcompilationThreads1;8;0;31910635;441082093;2138849749
+avrora;15.0.1.j9-adpt; -XcompilationThreads3;8;0;30552231;418102917;2050760619
+avrora;15.0.1.j9-adpt; -XcompilationThreads7;8;0;31457954;432019689;2103918136
+avrora;15.0.1.j9-adpt; -Xjit:count=0;8;0;38081654;518909201;2389132067
+avrora;15.0.1.j9-adpt; -Xjit:count=1;8;0;31030397;425348492;2095735724
+avrora;15.0.1.j9-adpt; -Xjit:count=10;8;0;71068083;971129678;4661384062
+avrora;15.0.1.j9-adpt; -Xjit:count=100;8;0;32583281;452348738;2209216146
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;30858577;423566852;2063662869
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;31552098;434466832;2104418318
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;33082039;455540578;2259681349
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;46058302;627052798;3263923835
+avrora;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;47269756;652821778;3354335834
+avrora;15.0.1-open;default;8;0;71364179;951524994;3979282720
+avrora;15.0.1-open; -XX:-TieredCompilation;8;0;72946684;972770757;4046945632
+avrora;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;63921482;846604783;3258645283
+avrora;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;72529742;966219159;4016813020
+avrora;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;71133456;947603419;3934253967
+h2;20.2.0.r11-grl;default;8;0;37961118;517780688;1859386110
+h2;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;32660507;444411955;1663712904
+h2;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;54925191;740194049;2629990214
+h2;15.0.1.j9-adpt;default;8;0;46966680;641536528;2401095233
+h2;15.0.1.j9-adpt; -XcompilationThreads1;8;0;49726196;672658794;2545690076
+h2;15.0.1.j9-adpt; -XcompilationThreads3;8;0;49448933;677802776;2659839321
+h2;15.0.1.j9-adpt; -XcompilationThreads7;8;0;47230256;640030931;2382159368
+h2;15.0.1.j9-adpt; -Xjit:count=0;8;0;64284014;866922373;3113173182
+h2;15.0.1.j9-adpt; -Xjit:count=1;8;0;53038195;716889272;2656045019
+h2;15.0.1.j9-adpt; -Xjit:count=10;8;0;51569086;714104489;2960445973
+h2;15.0.1.j9-adpt; -Xjit:count=100;8;0;45330289;620387031;2419655672
+h2;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;61193710;822550262;2858585884
+h2;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;50422251;683773325;2487088604
+h2;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;87082149;1204267667;4912675840
+h2;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;111677005;1517354550;6575596386
+h2;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;134593559;1829229811;7916561216
+h2;15.0.1-open;default;8;0;36462762;495588129;1869427831
+h2;15.0.1-open; -XX:-TieredCompilation;8;0;38476138;521275667;1890920269
+h2;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;53455040;713555662;2472975359
+h2;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;32891778;446111647;1638745622
+h2;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;31130281;419327850;1569928476
+pmd;20.2.0.r11-grl;default;8;0;5020890;71128431;291356188
+pmd;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;5178399;80470074;343079994
+pmd;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;5012351;67543273;268010056
+pmd;15.0.1.j9-adpt;default;8;0;4917125;65588407;278347737
+pmd;15.0.1.j9-adpt; -XcompilationThreads1;8;0;5768502;76268129;358976620
+pmd;15.0.1.j9-adpt; -XcompilationThreads3;8;0;5057286;65422005;287510860
+pmd;15.0.1.j9-adpt; -XcompilationThreads7;8;0;4892055;62761779;264289790
+pmd;15.0.1.j9-adpt; -Xjit:count=0;8;0;15570831;205831421;735242747
+pmd;15.0.1.j9-adpt; -Xjit:count=1;8;0;4490118;57323515;269120954
+pmd;15.0.1.j9-adpt; -Xjit:count=10;8;0;4806654;64438199;310045838
+pmd;15.0.1.j9-adpt; -Xjit:count=100;8;0;4417717;56278586;255132953
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;5325890;66936490;273529328
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;6173739;82157481;409260854
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;10790501;154975796;838836353
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;12141730;162975493;791762195
+pmd;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;11934501;158164729;784732732
+pmd;15.0.1-open;default;8;0;5000673;77314327;323997706
+pmd;15.0.1-open; -XX:-TieredCompilation;8;0;11684739;176279409;908493097
+pmd;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;4503377;55462761;215657407
+pmd;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;5037969;76296863;321933136
+pmd;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;5001143;75819854;316305953
+sunflow;20.2.0.r11-grl;default;8;0;4537363;71967422;334421812
+sunflow;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;4939051;76885209;357916137
+sunflow;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;5546209;87451037;430798824
+sunflow;15.0.1.j9-adpt;default;8;0;6906671;104146932;510189429
+sunflow;15.0.1.j9-adpt; -XcompilationThreads1;8;0;6660300;99124845;489345793
+sunflow;15.0.1.j9-adpt; -XcompilationThreads3;8;0;6158199;93596282;447302810
+sunflow;15.0.1.j9-adpt; -XcompilationThreads7;8;0;6708440;100491166;488971222
+sunflow;15.0.1.j9-adpt; -Xjit:count=0;8;0;17954378;246208854;919941126
+sunflow;15.0.1.j9-adpt; -Xjit:count=1;8;0;6913534;104910784;531142684
+sunflow;15.0.1.j9-adpt; -Xjit:count=10;8;0;36676739;555348706;2568969132
+sunflow;15.0.1.j9-adpt; -Xjit:count=100;8;0;7713970;118763757;590983168
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;5375583;76711385;386670580
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;4920301;68717456;329124828
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;6091044;90106658;463830904
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;14917515;209121884;1435589648
+sunflow;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;18959198;262625831;1887313650
+sunflow;15.0.1-open;default;8;0;4240414;66150529;308896486
+sunflow;15.0.1-open; -XX:-TieredCompilation;8;0;6110586;92747100;451016973
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;3801060;56226445;267639452
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;5070287;79620711;372432213
+sunflow;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;5105946;79435443;371714136
+als;20.2.0.r11-grl;default;8;0;45667975;661705707;2836319399
+als;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;49476216;713691511;3165703077
+als;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;71160129;1009077305;4508345880
+als;15.0.1.j9-adpt;default;8;0;58405120;835254372;3735306783
+als;15.0.1.j9-adpt; -XcompilationThreads1;8;0;65491393;925990166;4159694247
+als;15.0.1.j9-adpt; -XcompilationThreads3;8;0;60448337;861002834;3840479120
+als;15.0.1.j9-adpt; -XcompilationThreads7;8;0;60385250;859793935;3826814240
+als;15.0.1.j9-adpt; -Xjit:count=0;8;0;148125780;2020765951;8529987319
+als;15.0.1.j9-adpt; -Xjit:count=1;8;0;67189163;945213467;4241389534
+als;15.0.1.j9-adpt; -Xjit:count=10;8;0;57294757;824852667;3864107052
+als;15.0.1.j9-adpt; -Xjit:count=100;8;0;58948588;850711166;3902594013
+als;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;106345290;1466033225;6761473902
+als;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;71587640;1011089531;4627245845
+als;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;100178011;1469526505;7646854447
+als;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;220097270;2995924885;14421015145
+als;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;284597188;3897207401;18794306318
+als;15.0.1-open;default;8;0;46897152;664553618;2939710736
+als;15.0.1-open; -XX:-TieredCompilation;8;0;53288354;752635030;3259278827
+als;15.0.1-open; -XX:TieredStopAtLevel=1;8;50;15028310;204552677;804855667
+als;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;47613320;683100523;2986481307
+als;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;47386675;681894837;2992284759
+dotty;20.2.0.r11-grl;default;8;0;40315199;578528205;2307542128
+dotty;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;42866215;615974879;2692884403
+dotty;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;74426198;1016106628;3422212858
+dotty;15.0.1.j9-adpt;default;8;0;58535811;827160106;3461090627
+dotty;15.0.1.j9-adpt; -XcompilationThreads1;8;0;75698678;1044363219;4485655447
+dotty;15.0.1.j9-adpt; -XcompilationThreads3;8;0;58591781;822267242;3474312395
+dotty;15.0.1.j9-adpt; -XcompilationThreads7;8;0;59416484;845795001;3521872515
+dotty;15.0.1.j9-adpt; -Xjit:count=0;8;0;108146252;1462095539;4932950567
+dotty;15.0.1.j9-adpt; -Xjit:count=1;8;0;62524271;862903185;3158152987
+dotty;15.0.1.j9-adpt; -Xjit:count=10;8;0;54922703;816349309;3768036862
+dotty;15.0.1.j9-adpt; -Xjit:count=100;8;0;52768671;772858248;3466315956
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;96306583;1319879240;4873963414
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;69207875;986757818;4252267557
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;165140665;2603789894;12747786824
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;300916599;4093594331;17846692043
+dotty;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;367935055;5007453615;21739425488
+dotty;15.0.1-open;default;8;0;40060179;578840279;2503404540
+dotty;15.0.1-open; -XX:-TieredCompilation;8;0;59177652;803201606;3043439535
+dotty;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;73241636;987552484;3312165716
+dotty;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;39946816;575864017;2484666552
+dotty;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;39973607;580764269;2531929920
+neo4j;20.2.0.r11-grl;default;8;0;58266243;890376095;3446606411
+neo4j;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;84855621;1266559552;5176450066
+neo4j;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;161744712;2307854738;9229344292
+neo4j;15.0.1.j9-adpt;default;8;0;79013648;1168203593;4476058793
+neo4j;15.0.1.j9-adpt; -XcompilationThreads1;8;0;86379748;1260833847;4966313457
+neo4j;15.0.1.j9-adpt; -XcompilationThreads3;8;0;78986019;1165263270;4504629704
+neo4j;15.0.1.j9-adpt; -XcompilationThreads7;8;0;74634910;1103956704;4239834972
+neo4j;15.0.1.j9-adpt; -Xjit:count=0;8;0;199504320;2785674030;10487172555
+neo4j;15.0.1.j9-adpt; -Xjit:count=1;8;0;128232522;1841564534;7231304181
+neo4j;15.0.1.j9-adpt; -Xjit:count=10;8;0;85663023;1271131941;5121020826
+neo4j;15.0.1.j9-adpt; -Xjit:count=100;8;0;78312878;1162357157;4590157561
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=cold;8;0;126551732;1810870530;7126087714
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=warm;8;0;88382092;1309415217;5181378825
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=hot;8;0;130843182;1954596558;8860478782
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=veryhot;8;0;329820248;4552194372;20350103971
+neo4j;15.0.1.j9-adpt; -Xjit:optlevel=scorching;8;0;458618891;6302970328;28318799941
+neo4j;15.0.1-open;default;8;0;77581300;1176232451;4674559017
+neo4j;15.0.1-open; -XX:-TieredCompilation;8;0;68179337;1032622658;3889044000
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=1;8;0;147705508;2127681387;8380703033
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=4;8;0;80407054;1214156209;4797252794
+neo4j;15.0.1-open; -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler;8;0;79018311;1195328458;4714644913
+reactors;20.2.0.r11-grl;default;8;0;397789763;5787878938;23912344240
+reactors;20.2.0.r11-grl; -XX:-UseJVMCICompiler;8;0;424403828;6172374776;25612367478
+reactors;20.2.0.r11-grl; -Dgraal.CompilerConfiguration=economy;8;0;534522997;7680566601;31600538488
+reactors;15.0.1.j9-adpt;default;8;0;221974556;3319674935;12666408797
+reactors;15.0.1.j9-adpt; -XcompilationThreads1;8;0;232416960;3469641755;13583788223
+reactors;15.0.1.j9-adpt; -XcompilationThreads3;8;0;220167702;3274754441;12717344824
+reactors;15.0.1.j9-adpt; -XcompilationThreads7;8;0;226984580;3370679811;13084328321
+reactors;15.0.1.j9-adpt; -Xjit:count=0;8;0;319059642;4604947870;17632826747
+reactors;15.0.1.j9-adpt; -Xjit:count=1;8;0;254916995;3721171369;14209773376
+reactors;15.0.1.j9-adpt; -Xjit:count=10;8;130;63334796;954540837;3823777748
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;71867678;1004476978;4046083819
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;115361301;2096932121;7389998720
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;61303141;821011679;2825609221
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;89361195;1189547735;4102094234
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;4313311;56870514;216614741
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;5559706;87829221;325627585
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;51131957;821652809;4363534362
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;111064874;2648707266;10712781841
+als;15.0.1-open; -XX:TieredStopAtLevel=2;1;50;57440788;878887937;3102628898
+als;15.0.1-open; -XX:TieredStopAtLevel=3;1;50;280588470;4758463680;15897905896
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;83506572;1124581488;3759545551
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;151170337;2028982786;6744869085
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;362740093;5624950308;19237399728
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;864168475;14821678824;46646427460
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;658328715;10640699813;41272168391
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;2369785840;43927775058;190038837535
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;24889738;521858353;2219048946
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;91742342;2179130927;9163963234
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;1;0;267667578;4244209383;22537154524
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;1;0;1652397804;30052148203;145120458019
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;70922324;985810869;3994181669
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;117360599;2000244918;7502383382
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;61952372;825467146;2882476019
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;89666373;1188058112;4133944312
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;4703398;60386712;229500327
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;5820740;90571884;332415959
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;47163575;806069453;4112550385
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;103683991;2445116608;9986038339
+als;15.0.1-open; -XX:TieredStopAtLevel=2;2;50;57552508;889055552;3120716925
+als;15.0.1-open; -XX:TieredStopAtLevel=3;2;50;296585623;4972201788;16727273767
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;82597829;1107925938;3717991398
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;150955664;2015060138;6831458708
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;360971833;5707610456;19096855042
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;888358575;15828042658;47922772031
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;646229810;10472054032;40354999597
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;2389246865;44036404415;190811754989
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;26201418;564022659;2309265207
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;91592960;2159247706;9090027877
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;2;0;260969336;4170340753;22072762768
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;2;0;1670649865;29817860572;145002345955
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;72308918;1010088375;4164837665
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;121050884;2101849586;7673042003
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;61713684;821528971;2857796028
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;90246776;1197676488;4137766080
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;4584634;58806897;224500523
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;5729087;92382915;333501832
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;48191551;820262116;4164769367
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;103766946;2407797719;10178846562
+als;15.0.1-open; -XX:TieredStopAtLevel=2;3;50;56384044;873599446;3050802127
+als;15.0.1-open; -XX:TieredStopAtLevel=3;3;50;295915767;4982198165;16675277257
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;83676371;1128044122;3765776187
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;151530748;2031209181;6823143726
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;357790461;5560723984;19043411699
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;826785194;14369627914;44593535803
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;659632720;10740376298;41398142739
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;2396701724;44246574241;191441810872
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;25813430;559790280;2317126821
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;87831205;2092012620;8775197324
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;3;0;264015125;4192451241;22221283689
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;3;0;1693923435;30309311475;148030587349
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;73049473;1026418523;4192061900
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;123471400;2262667336;8043974036
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;61813027;828290241;2858470160
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;89903800;1196843127;4137825467
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;4544422;58810737;223930152
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;5664388;89749739;331384039
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;47617707;800827582;4098267951
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;108086865;2553735822;10493304924
+als;15.0.1-open; -XX:TieredStopAtLevel=2;4;50;55286656;855700956;2998321487
+als;15.0.1-open; -XX:TieredStopAtLevel=3;4;50;294041857;4946497420;16378473025
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;82246766;1109833771;3714910961
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;151057995;2026393322;6787361165
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;368607818;5742085441;19507280384
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;771353557;12988590032;41194740245
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;647323857;10384974481;40568882166
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;2328644668;42811046081;186079085831
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;25381054;542900259;2249723855
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;92538981;2207668655;9262003816
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;4;0;273921039;4220746542;22890318903
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;4;0;1638633214;29374958988;143091262042
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;74023173;1037385947;4282130822
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;121540441;2114892286;7778839279
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;61172167;817929677;2799702122
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;90697579;1206133793;4183669771
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;4502426;58123231;222976846
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;5667284;91480153;330134287
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;48258251;839615148;4136301423
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;105881103;2505797830;10371072999
+als;15.0.1-open; -XX:TieredStopAtLevel=2;5;50;56279238;868678477;3070644971
+als;15.0.1-open; -XX:TieredStopAtLevel=3;5;50;289854341;4883469652;16192797536
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;82601250;1112595268;3666922925
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;151905574;2033889664;6801120773
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;361933540;5669437919;19118550483
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;839741137;14425344181;45013345031
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;660660991;10694982760;41049144853
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;2370342776;44071463447;189573775004
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;26353350;573442807;2318535690
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;87175476;2287872771;8821083803
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;5;0;271445861;4267158740;22867621512
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;5;0;1657966068;30619416801;145455020640
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;70859573;981840383;3946559112
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;119172167;2094786113;7675221623
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;61561100;822090390;2833568796
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;89825119;1191248132;4119205153
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;4626028;59075640;228568628
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;5617169;89351388;327385515
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;46843968;810804711;4072769358
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;117162291;2671401727;11244723960
+als;15.0.1-open; -XX:TieredStopAtLevel=2;6;50;55859235;864907806;3024639413
+als;15.0.1-open; -XX:TieredStopAtLevel=3;6;50;295281357;5002382307;16608950706
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;83966234;1129723833;3725461350
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;151671646;2027162973;6798237479
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;355712388;5450522306;18702755038
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;819878876;14179248149;44265282128
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;632904904;10266159897;39523406755
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;2387897127;44018054910;191386684487
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;25659234;560571315;2297667580
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;92986220;2290550867;9323899776
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;6;0;266521724;4158861682;22438364739
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;6;0;1655941623;28553055564;143739153267
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;73749997;1032520592;4254165197
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;124465364;2212967214;8151322333
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;61381686;819760215;2835199528
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;89937004;1197265897;4095637159
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;4669760;60419164;233507946
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;5828235;89179814;329753916
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;45105100;752853101;3906695565
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;108102812;2547844740;10511594977
+als;15.0.1-open; -XX:TieredStopAtLevel=2;7;50;57188813;883025287;3114455651
+als;15.0.1-open; -XX:TieredStopAtLevel=3;7;50;286871416;4875815245;15879611509
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;82148279;1103838207;3720544186
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;151881352;2034817074;6743120799
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;360507917;5553287189;19048265079
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;809885128;13817262251;43542511029
+reactors;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;649874325;10608331560;40737727253
+reactors;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;2401349557;44403589039;191538282061
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;26430806;551759402;2322373510
+scrabble;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;90913629;2146890919;9052501545
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=2;7;0;270703839;4273029090;22798881332
+fj-kmeans;15.0.1-open; -XX:TieredStopAtLevel=3;7;0;1653943011;29501069452;143957363219
+avrora;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;71354165;996459363;4001804330
+avrora;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;120056634;2110874108;7613870889
+h2;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;61708521;824225061;2824765778
+h2;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;90849645;1209112503;4198661493
+pmd;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;4553110;58349273;224427954
+pmd;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;5710577;90633605;330756966
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;48523592;837812546;4191880932
+sunflow;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;106067536;2436199784;10092896891
+als;15.0.1-open; -XX:TieredStopAtLevel=2;8;50;57798923;896662175;3147940367
+als;15.0.1-open; -XX:TieredStopAtLevel=3;8;50;296569497;5010246354;16636025221
+dotty;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;82555511;1111439200;3715125316
+dotty;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;150974146;2010676260;6779820535
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=2;8;0;352780899;5449989943;18710864148
+neo4j;15.0.1-open; -XX:TieredStopAtLevel=3;8;0;813786144;14051008736;43572463650
