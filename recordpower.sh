@@ -6,7 +6,8 @@ reportfile=$(cat /etc/mailname)
 reportfile=/home/mbelgaid/jvm-comparaison/benchmarks/results/report$1-${reportfile%%.*}.logs
 jvms=$(grep -v "#" jvms.sh)
 
-exp_name=tt$1
+exp_name=powers$1
+exp_name=${exp_name:-powers}
 duration=1200
 
 mkdir $(pwd)/powers/$exp_name
